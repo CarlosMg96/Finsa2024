@@ -1,0 +1,18 @@
+<svg id="Hamburguesa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.435" height="26.065" viewBox="0 0 32.435 26.065">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_1517" data-name="Path 1517" d="M2.741-13.854,0,12.211H29.694l2.741-26.048v-.017Z" transform="translate(0 13.854)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1909" data-name="Group 1909" clip-path="url(#clip-path)">
+    <g id="Group_1906" data-name="Group 1906" transform="translate(0.691 22.19)">
+      <path id="Path_1514" data-name="Path 1514" d="M0,0H29.7" fill="none" stroke="#00acee" stroke-linecap="round" stroke-width="4"/>
+    </g>
+    <g id="Group_1907" data-name="Group 1907" transform="translate(1.651 12.872)">
+      <path id="Path_1515" data-name="Path 1515" d="M0,0H29.7" fill="none" stroke="#0081c8" stroke-linecap="round" stroke-width="4"/>
+    </g>
+    <g id="Group_1908" data-name="Group 1908" transform="translate(2.611 3.554)">
+      <path id="Path_1516" data-name="Path 1516" d="M0,0H29.7" fill="none" stroke="#002854" stroke-linecap="round" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

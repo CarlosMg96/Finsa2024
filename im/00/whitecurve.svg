@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 790.37 392.96">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        mask: url(#mask);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-6 {
+        filter: url(#luminosity-noclip);
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-10 {
+        opacity: .4;
+      }
+
+      .cls-4 {
+        fill: #00adef;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" x="7.23" y="-.67" width="783.98" height="390.58"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-2" x="7.23" y="-.67" width="783.98" height="390.58"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-2" x="-43.05" y="-135.58" width="879.58" height="654.94"/>
+    </clipPath>
+    <filter id="luminosity-noclip" x="-334.56" y="-527.09" width="1462.61" height="1437.95" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="-562.26" y1="732.31" x2="-561.26" y2="732.31" gradientTransform="translate(754114.06 -577981.87) rotate(-90) scale(1029.23 -1029.23)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <mask id="mask" x="-334.56" y="-527.09" width="1462.61" height="1437.95" maskUnits="userSpaceOnUse">
+      <g class="cls-6">
+        <rect class="cls-3" x="-112.08" y="-354.15" width="1017.65" height="1092.08" transform="translate(26.04 430.23) rotate(-58.55)"/>
+      </g>
+    </mask>
+    <clipPath id="clippath-3">
+      <rect class="cls-2" x="-43.05" y="-135.58" width="879.58" height="654.94"/>
+    </clipPath>
+  </defs>
+  <g class="cls-1">
+    <g class="cls-7">
+      <g class="cls-10">
+        <g class="cls-9">
+          <g class="cls-5">
+            <g class="cls-8">
+              <path class="cls-4" d="M791.21,389.81v-90.71c-75.23-3.2-151.31-15.46-226.89-37.55C394.69,212.17,249.09,119.67,135.74-.67H7.23c120.73,164.1,293.77,291.11,503.56,352.19,93.57,27.34,187.88,39.61,280.42,38.29"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
