@@ -234,7 +234,8 @@ if (!empty($thispage)) {
     'environmental-impact' => 'impacto-ambiental',
     'social-impact' => 'impacto-social',
     'governance' => 'gobernanza',
-    'letter-from-the-president' => 'carta-del-presidente'
+    'letter-from-the-president' => 'carta-del-presidente',
+    'imformes-anteriores' => 'previous-reports',
   );
 
   if (array_key_exists($thispage, $Pages)) {
@@ -242,8 +243,13 @@ if (!empty($thispage)) {
   }
 }
 
-
 echo <<<HTML
+
+<div class="flex1" style="position:absolute; right:150px; top:0px;">
+  <a href="informes-anteriores" class="toplinks">INFORMES ANTERIORES</a>
+</div>
+
+
 
       <div id="px" style="display:none;width:100px; color:silver; position:absolute; top:4px;right:0px; opacity:0.5; font-size:0.8em">999</div>
 
