@@ -99,7 +99,7 @@ echo <<<HTML
           valor, la responsabilidad y resiliencia, así como el sentido sostenible
           del negocio.
         </p>
-        <a href="seguir-leyendo" style="display: inline-block; margin-top: 20px; color: #1976D2;">
+        <a href="carta-del-presidente" style="display: inline-block; margin-top: 20px; color: #1976D2;">
           Seguir leyendo
         </a>
       </div>
