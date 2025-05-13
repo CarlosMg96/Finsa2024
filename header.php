@@ -142,7 +142,7 @@ HTML;
 
 require_once "bigmenu.php";
 
-echo<<<HTML
+echo <<<HTML
 
 
 <style type="text/css">
@@ -169,7 +169,7 @@ echo<<<HTML
 
       <a href="nuestra-empresa">
       <div class="toplinks">
-        NUESTRA EMPRESA        
+            SOBRE FINSA          
         <br>
 
         <div class="dashwrapper" data-aos="flip-right" data-aos-duration="400">
@@ -186,7 +186,7 @@ echo<<<HTML
       </div>
       </a>
       <a href="impacto-ambiental">
-      <div class="toplinks">IMPACTO AMBIENTAL
+      <div class="toplinks">MEDIO AMBIENTE 
         <br>
         <div class="dashwrapper" data-aos="flip-right" data-aos-duration="800">
           <div class="dash1" style="background-color: #09c9b6;" data-aos="flip-right"></div>
@@ -195,7 +195,7 @@ echo<<<HTML
       </div>
       </a>
       <a href="impacto-social">
-      <div class="toplinks">IMPACTO SOCIAL
+      <div class="toplinks">TALENTO, CULTURA CORPORATIVA Y COMUNIDAD
         <br>
         <div class="dashwrapper" data-aos="flip-right" data-aos-duration="1200">
           <div class="dash1" style="background-color: #00adef;" data-aos="flip-right"></div>
@@ -212,6 +212,7 @@ echo<<<HTML
           <div class="dash2" style="background-color: #ff8f43;"></div>
         </div>
       </div>
+      
       </a>
       
       
@@ -221,15 +222,24 @@ HTML;
 
 $gowhere = 'en';
 
-if (!empty($thispage)){
+if (!empty($thispage)) {
 
-  $Pages = array('nuestra-empresa'=>'our-company','impacto-ambiental'=>'environmental-impact','impacto-social'=>'social-impact','gobernanza'=>'governance','carta-del-presidente'=>'letter-from-the-president',
-'our-company'=>'nuestra-empresa','environmental-impact'=>'impacto-ambiental','social-impact'=>'impacto-social','governance'=>'gobernanza','letter-from-the-president'=>'carta-del-presidente'  );
+  $Pages = array(
+    'nuestra-empresa' => 'our-company',
+    'impacto-ambiental' => 'environmental-impact',
+    'impacto-social' => 'social-impact',
+    'gobernanza' => 'governance',
+    'carta-del-presidente' => 'letter-from-the-president',
+    'our-company' => 'nuestra-empresa',
+    'environmental-impact' => 'impacto-ambiental',
+    'social-impact' => 'impacto-social',
+    'governance' => 'gobernanza',
+    'letter-from-the-president' => 'carta-del-presidente'
+  );
 
-  if ( array_key_exists($thispage, $Pages) ){
+  if (array_key_exists($thispage, $Pages)) {
     $gowhere = $Pages[$thispage];
   }
-
 }
 
 
@@ -238,7 +248,7 @@ echo <<<HTML
       <div id="px" style="display:none;width:100px; color:silver; position:absolute; top:4px;right:0px; opacity:0.5; font-size:0.8em">999</div>
 
       <div style="position:absolute; right:10px;top:0px;width:100px;" class="flex1">
-        <a href="./$gowhere"><div style=" height:100%; color:white; margin-top:18px">EN</div></a>
+        <a href="./$gowhere"><div style=" height:100%; color:BLACK; margin-top:18px">EN</div></a>
         <div style=" height:100%">
           <a onmouseup="reveal('bigmenu');"><img src="im/burger.svg" style="height:18px; margin:18px 20px; cursor:pointer;"></a>
         </div>
@@ -359,7 +369,3 @@ echo <<<HTML
 <input type="text" style="display:none; position:fixed; z-index:30; top:0.5em;left:12vw; background-color:transparent; width:100px; color:orange;opacity:0.4" value="home" id="toptxt3">
 
 HTML;
-
-
-
-?>

@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 require_once "header.php";
 
 
-echo<<<HTML
+echo <<<HTML
 <style type="text/css">
   .portadafoto { height:  47vw; width:100vw; background-image:url(im/00/portada-foto.jpg); background-position: bottom left; background-size: cover; position:relative; overflow:hidden}
   .portadacurved {height:  49vw; width:47vw; position:absolute;right:0;bottom:0;}
@@ -43,67 +43,166 @@ echo<<<HTML
   }
 </style>
 
-<div style="positon:relative;width:100vw; border-top:1px solid #E9F2F9; border-bottom:1px solid #E9F2F9; background-color:#E9F2F9;">
-  <div style="width:80%; margin:80px auto 20px auto;" class="flex1">
-    <div class="w70 flex5">
-      
-      <p data-aos="fade-down">
-        <img data-aos="fade-left" src="im/logo-finsa-bl.svg" style="width:170px; margin-bottom:1em"><br>
-        En FINSA somos más que un líder en la construcción de parques industriales de clase mundial, nuestro compromiso va más allá de la eficiencia operativa; trabajamos bajo un modelo de sostenibilidad integrada al negocio que contempla nuestra relación con la comunidad, el desarrollo del talento y el respeto por el planeta que habitamos, al tiempo que generamos valor para la industria.
-      </p>
+<div style="width:100vw; border-top:1px solid #E9F2F9; border-bottom:1px solid #E9F2F9; background-color:#e8f9ff;" data-aos="fade-right">
+  <div style="display:flex; width:100vw; min-height:400px;">
+    <!-- Mitad izquierda con imagen y corte diagonal -->
+    <div style="
+      width:50vw; 
+      background: url('https://placehold.co/600x400') center center/cover no-repeat;
+      clip-path: polygon(0 0, 90% 0, 75% 100%, 0% 100%);
+      min-height:400px;
+      ">
     </div>
-    <div class="w20">
-      <img src="im/00/circle-photo-1.jpg" style="width:80%; border-radius:50%" data-aos="flip-right" />
-    </div>
-  </div>
-
-  <div style="width:80%; position:relative; margin:0px auto 80px auto; " class="flex1">
-    <div class="w30"></div>
-    <div class="w70 flex4" >
-
-      <div style="position:relative; text-align:right; border:0px solid yellow;">
-        <img src="im/diag1.svg" style="height:100%">
-      </div>
-      <div class="diagtxt" style="color:#00adef; text-transform: uppercase; position:reative">
-        
-        En FINSA <b>vamos más allá de la responsabilidad</b>, nuestro enfoque está en la sostenibilidad y resiliencia para continuar creciendo con México, en línea con los retos globales.
-        <br>
+    <!-- Mitad derecha con texto -->
+    <div style="width:50vw; background:#e8f9ff; display:flex; align-items:center; padding-bottom: 10px;"> <!-- Espacio para la línea inferior -->
+      <div style="width:80%; margin:auto;">
+        <h2 style="color:#1976D2; font-weight:700;">EVOLUCIÓN ESTRATÉGICA</h2>
+        <p>
+          2024 fue un año que reafirmó nuestra capacidad para convertir
+          desafíos en oportunidades, impulsando una evolución estratégica que
+          nos fortalece y nos prepara para un futuro prometedor.
+        </p>
+        <p>
+          Gracias al liderazgo, el talento y el compromiso de nuestra gente,
+          demostramos que en FINSA el éxito va más allá de los resultados, está
+          en nuestra contribución al desarrollo de México, en la preservación del
+          planeta y en el bienestar nuestras comunidades
+        </p>
+        <b style="color:#1A2B49;">
+          Este año de evolución marcó un paso firme hacia el
+          crecimiento sostenido, guiados con visión,
+          responsabilidad y determinación.
+        </b>
+        <div style="height:3px; background-color:#1A2B49; margin-top: 20px;"></div> <!-- Línea azul abajo -->
       </div>
     </div>
   </div>
 </div>
 
 
-
-<div style="positon:relative;width:100vw; border-top:1px solid #fff; border-bottom:1px solid #fff; background-color:#fff;"  >
-  
-    <div style="width:100%" class="flex1">
-      <div style="width:50%">
-        <div style="width:80%; margin:80px auto 20px auto;" data-aos="fade-right">
-        <h3>Carta del presidente y</h3>
-        <h1>DIRECTOR GENERAL</h1>
-      </div>
-      </div>
-      <div style="width:50%; text-align:right">
-        <img src="im/00/whitecurve.svg" style="width:70%" data-aos="fade-down">
-      </div>
-    </div>
-    <div style="width:80%; margin:20px auto 80px auto;" class="flex1">
-      <div class="w20"></div>
-      <div class="w70">
-        <p>Nuestros parques industriales se posicionan como ejes estratégicos de transformación dentro nuestro camino hacia la descarbonización, la integración de criterios ASG nos ha permitido fortalecer los cuatro ejes de nuestro modelo de sostenibilidad; Talento y Cultura Corporativa, Medio Ambiente, Ética y Legalidad, y Comunidad. Esto nos ha permitido disminuir los riesgos emergentes y maximizar nuestro compromiso a lo largo de nuestra cadena de valor, para así, lograr la resiliencia y sostenibilidad de nuestro negocio. </p>
-        <a href="carta-del-presidente">
-        <p><img src="im/leer-mas.svg" style="width:80px" data-aos="fade-down"></p>
-        </a>
-        <br>
-        
-        <a href="pdf/IAS_Finsa_2023_CartaPresidente.pdf">
-        <img src="im/00/descargar-la-carta.svg" style="width:240px" data-aos="flip-down">
+<div style="position:relative; width:100vw; border-top:1px solid #fff; border-bottom:1px solid #fff; background-color:#fff;">
+  <div style="display: flex; width:100%;">
+    <div style="width:50%;">
+      <div style="width:80%; margin:80px auto 20px auto;" data-aos="fade-right">
+        <h3 style="color: #1A2B49; font-size: 1.2em; margin-bottom: 5px;">Carta del presidente y</h3>
+        <h2 style="color:#1976D2; font-weight:700; font-size: 2em; margin-top: 0;">DIRECTOR GENERAL</h2>
+        <b style="color:#1A2B49; font-size: 1.1em; line-height: 1.4;">
+          Estamos convencidos de la importancia de integrar
+          los principios ASG (Ambientales, Sociales y de
+          Gobernanza) en todas nuestras operaciones.
+        </b>
+        <p style="margin-top: 15px; color: #333; line-height: 1.6; font-size: 1em;">
+          Por ello, seguimos fortaleciendo los pilares de nuestro modelo de
+          sostenibilidad empresarial: Talento y Cultura Corporativa, Medio
+          Ambiente, Ética y Legalidad, y Comunidad. Nuestra visión se enfoca en
+          la gestión de riesgos, la innovación, el compromiso con la cadena de
+          valor, la responsabilidad y resiliencia, así como el sentido sostenible
+          del negocio.
+        </p>
+        <a href="seguir-leyendo" style="display: inline-block; margin-top: 20px; color: #1976D2;">
+          Seguir leyendo
         </a>
       </div>
     </div>
-
+    <div style="width:50%; display:flex; align-items:center; justify-content:center; min-height:400px; text-align:center;">
+      <img src="https://placehold.co/600x400" style="width:70%; border-radius: 10px; max-height: 300px; object-fit: cover;" data-aos="fade-down">
+    </div>
+  </div>
 </div>
+
+<div style="background-color:#001F4C; padding: 50px 30%; color: #fff; font-family: 'Arial', sans-serif;" data-aos="fade-right">
+  <h2 style="font-size: 2.5em; font-weight: 800; margin-bottom: 50px; text-transform: uppercase; color: white;">
+    CONTENIDO
+  </h2>
+
+  <ul style="list-style: none; padding: 0; margin: 0;">
+
+    <!-- Carta del Presidente -->
+    <li style="margin-bottom: 40px; display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center; gap: 15px;">
+        <img src="URL_DE_LA_IMAGEN_FLECHA" alt="Flecha" style="width: 25px;">
+        <span style="font-weight: bold; font-size: 1em;">Carta del Presidente y Director General</span>
+      </div>
+      <div style="text-align: right;">
+        <a href="#" style="color: #fff; text-decoration: none; font-size: 0.7em; display: flex; align-items: center;">
+          <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar" style="width: 18px; margin-right: 5px;">
+          DESCARGA CARTA
+        </a>
+      </div>
+    </li>
+
+    <!-- Capítulo 01 -->
+    <li style="margin-bottom: 40px; display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center;">
+        <span style="font-size: 2.5em; font-weight: bold; color: #00AEEF; width: 60px;">01</span>
+        <div style="padding-left: 20px;">
+          <p style="margin: 0; font-size: 0.9em; color: #A0C4FF;">EVOLUCIÓN QUE REAFIRMA NUESTRO LIDERAZGO</p>
+          <p style="margin: 5px 0 0; font-weight: bold;">Sobre FINSA</p>
+        </div>
+      </div>
+      <div style="text-align: right;">
+        <a href="#" style="color: #fff; text-decoration: none; font-size: 0.7em; display: flex; align-items: center;">
+          <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar" style="width: 18px; margin-right: 5px;">
+          DESCARGA CAPÍTULO
+        </a>
+      </div>
+    </li>
+
+    <!-- Capítulo 02 -->
+    <li style="margin-bottom: 40px; display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center;">
+        <span style="font-size: 2.5em; font-weight: bold; color: #00E6B8; width: 60px;">02</span>
+        <div style="padding-left: 20px;">
+          <p style="margin: 0; font-size: 0.9em; color: #7CF2D0;">EVOLUCIÓN QUE SUMA A LA SOSTENIBILIDAD</p>
+          <p style="margin: 5px 0 0; font-weight: bold;">Medio ambiente</p>
+        </div>
+      </div>
+      <div style="text-align: right;">
+        <a href="#" style="color: #fff; text-decoration: none; font-size: 0.7em; display: flex; align-items: center;">
+          <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar" style="width: 18px; margin-right: 5px;">
+          DESCARGA CAPÍTULO
+        </a>
+      </div>
+    </li>
+
+    <!-- Capítulo 03 -->
+    <li style="margin-bottom: 40px; display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center;">
+        <span style="font-size: 2.5em; font-weight: bold; color: #1976D2; width: 60px;">03</span>
+        <div style="padding-left: 20px;">
+          <p style="margin: 0; font-size: 0.9em; color: #89C4F4;">EVOLUCIÓN QUE NOS PERMITE HACER MÁS</p>
+          <p style="margin: 5px 0 0; font-weight: bold;">Talento, cultura corporativa y comunidad</p>
+        </div>
+      </div>
+      <div style="text-align: right;">
+        <a href="#" style="color: #fff; text-decoration: none; font-size: 0.7em; display: flex; align-items: center;">
+          <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar" style="width: 18px; margin-right: 5px;">
+          DESCARGA CAPÍTULO
+        </a>
+      </div>
+    </li>
+
+    <!-- Capítulo 04 -->
+    <li style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center;">
+        <span style="font-size: 2.5em; font-weight: bold; color: #FF9800; width: 60px;">04</span>
+        <div style="padding-left: 20px;">
+          <p style="margin: 0; font-size: 0.9em; color: #FFCA80;">EVOLUCIÓN QUE NOS GUÍA CON INTEGRIDAD</p>
+          <p style="margin: 5px 0 0; font-weight: bold;">Gobernanza</p>
+        </div>
+      </div>
+      <div style="text-align: right;">
+        <a href="#" style="color: #fff; text-decoration: none; font-size: 0.7em; display: flex; align-items: center;">
+          <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar" style="width: 18px; margin-right: 5px;">
+          DESCARGA CAPÍTULO
+        </a>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
+
 
 <style type="text/css">
   .numbers1 { width:24% }
@@ -243,46 +342,54 @@ echo<<<HTML
     .cont{width:44%; margin-bottom:1em}
   }
 </style>
+<div style="width: 100vw; background-color: #e8f9ff; font-family: sans-serif; color: #1A2B49; position: relative;">
 
-<div style="positon:relative;width:100vw; border-top:1px solid #F7F7F7; border-bottom:1px solid #F7F7F7; background-color:#F7F7F7;"  >
-  
-        <div style="width:80%; margin:80px auto;" >
-          <h1 data-aos="fade-right">CONTENIDO</h1>
-          <div style="width:100%" class="flex1">
-            
-            <div data-aos="flip-left" data-aos-duration="400" class="cont">
-              <img onmouseup="document.location.href='nuestra-empresa';" 
-              onmouseover="$(this).attr('src','im/00/contenido-1-b.png');"
-              onmouseout="$(this).attr('src','im/00/contenido-1.png');"
-              src="im/00/contenido-1.png" class="ilinks" >
-            <!-- -->
-            </div>
+    <div style="display: flex; width: 100vw; align-items: center; padding: 2vw;">
 
-            <div data-aos="flip-left" data-aos-duration="800" class="cont">
-              <img onmouseup="document.location.href='impacto-ambiental';" 
-              onmouseover="$(this).attr('src','im/00/contenido-2-b.png');"
-              onmouseout="$(this).attr('src','im/00/contenido-2.png');"
-              src="im/00/contenido-2.png" class="ilinks" >
-            </div>
-            
-            <div data-aos="flip-left" data-aos-duration="1200" class="cont">
-              <img onmouseup="document.location.href='impacto-social';" 
-              onmouseover="$(this).attr('src','im/00/contenido-3-b.png');"
-              onmouseout="$(this).attr('src','im/00/contenido-3.png');"
-              src="im/00/contenido-3.png" class="ilinks" >
-            </div>
-            
-            <div data-aos="flip-left" data-aos-duration="1600" class="cont">
-              <img onmouseup="document.location.href='gobernanza';" 
-              onmouseover="$(this).attr('src','im/00/contenido-4-b.png');"
-              onmouseout="$(this).attr('src','im/00/contenido-4.png');"
-              src="im/00/contenido-4.png" class="ilinks" >
-            </div>
-            
-          </div>
+        <div style="width: 50vw; background: url('https://placehold.co/600x400') center center/cover no-repeat; height: 500px;clip-path: polygon(0 0, 90% 0, 75% 100%, 0% 100%);">
         </div>
-    
+
+        <div style="width: 50vw; padding: 2vw;">
+            <h2 style="font-size: 3em; font-weight: bold; margin-bottom: 0.5em; color: #1976D2;">HIGHLIGHTS</h2>
+            <p style="font-size: 1.2em; margin-bottom: 2em;">2024</p>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+
+                <div style="width: 45%; margin-bottom: 2em; text-align: left; position: relative;">
+                    <span style="font-size: 7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">10</span>
+                    <span style="font-size: 1em; display: block; color: #1976D2;">Estados de<br>la República</span>
+                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2;"></div>
+                </div>
+
+                <div style="width: 45%; margin-bottom: 2em; text-align: left; position: relative;">
+                    <span style="font-size: 7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">4</span>
+                    <span style="font-size: 1em; display: block; color: #1976D2;">Parques Proveedores<br>de la industria<br>automotriz</span>
+                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2;"></div>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; position: relative; ">
+                <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;">
+                    <span style="font-size: 0.8em; color: #1976D2;">Cierre de la segunda<br>etapa del fondo de<br>inversión FINSA V</span>
+                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2;"></div>
+                </div>
+
+                <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;">
+                    <span style="font-size: 0.8em; color: #1976D2;">Formamos parte por<br>segundo año de las<br>500 empresas más importantes<br>de México, de la revista expansión</span>
+                     <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2;"></div>
+                </div>
+
+                <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;">
+                    <span style="font-size: 0.8em; color: #1976D2;">Inicio del proyecto de<br>transformación digital:<br>Innovación estratégica<br>Sostenible (IES)</span>
+                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2;"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
+
+
 HTML;
 
 
@@ -291,6 +398,3 @@ $prev1 = "gobernanza";
 $next1 = "nuestra-empresa";
 
 require_once "footer.php";
-
-
-?>

@@ -78,7 +78,7 @@ echo<<<HTML
                   CAPÍTULO 1
                   <br><b>
                   <span style="color:#00adef; font-weight:700">/ </span>
-                  Nuestra empresa 
+                  SOBRE FINSA 
                   </b>
                   <img src="im/arr-dwn.svg" style="width:1.2vw">
                 </p>
