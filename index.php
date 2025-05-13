@@ -342,7 +342,7 @@ echo <<<HTML
     .cont{width:44%; margin-bottom:1em}
   }
 </style>
-<div style="width: 100vw; background-color: #e8f9ff; font-family: sans-serif; color: #1A2B49; position: relative;">
+<div style="width: 100vw; background-color: #e8f9ff; font-family: sans-serif; color: #1A2B49; position: relative;" data-aos="fade-right">
 
     <div style="display: flex; width: 100vw; align-items: center; padding: 2vw;">
 
