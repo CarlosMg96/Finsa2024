@@ -55,92 +55,74 @@ echo<<<HTML
 <div style="positon:relative;width:100vw;  border-top:1px solid #fff; border-bottom:1px solid #fff; background-color:#fff;"  >
   
         <div style="width:80%; margin:80px auto 0px auto;" >
-          <h1 data-aos="fade-right">DESCARGAS</h1>
+          <h1 data-aos="fade-right">Descargas</h1>
+          <p style="font-size:1.2em; color:#4C5C6E;">Explora más de nuestro Informe Anual de Sostenibilidad 2024 o descarga por separado las secciones en PDF.</p>
         </div>
 
           <div style="" class="flex1 df1">
-            <div class="w50 flex5">
-              <img src="im/descargas-foto.jpg" style="width:85%; margin:auto; position:relative;
-              box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.35);" data-aos="fade-down">
-            </div>
+            
             <div class="w50 flex1">
               <div class="w50 descargas" >
                 <a href='pdf/IAS_Finsa_2023_programado.pdf'>
-                <img src="im/descarga-el-informe.svg" class="descarga-el-informe" data-aos="flip-down">
+                    <button style="background-color:#fff; border:1px solid #ccc; padding:10px 20px; border-radius:25px; cursor:pointer;">Descargar el informe completo</button>
                 </a>
                 <p>
-                  <b>DESCARGA POR SECCIONES</b>
-                  <br>
+                  
+                  
+                  
                 </p>
-
-                <a target="_new" href="pdf/IAS_Finsa_2023_Capitulo-1.pdf">
-                <p>                  
-                  CAPÍTULO 1
-                  <br><b>
-                  <span style="color:#00adef; font-weight:700">/ </span>
-                  SOBRE FINSA 
-                  </b>
-                  <img src="im/arr-dwn.svg" style="width:1.2vw">
-                </p>
-                </a>
-
-                <a target="_new" href="pdf/IAS_Finsa_2023_Capitulo-2.pdf">
-                <p>
-                  CAPÍTULO 2
-                  <br><b>
-                  <span style="color:#00adef; font-weight:700">/ </span>
-                  Impacto ambiental
-                  </b>
-                  <img src="im/arr-dwn.svg" style="width:1.2vw">
-                </p>
-                </a>
-
-                <a target="_new" href="pdf/IAS_Finsa_2023_Capitulo-3.pdf">
-                <p>
-                  CAPÍTULO 3
-                  <br><b>
-                  <span style="color:#00adef; font-weight:700">/ </span>
-                  Impacto social 
-                  </b>
-                  <img src="im/arr-dwn.svg" style="width:1.2vw">
-                </p>
-                </a>
-
-                <a target="_new" href="pdf/IAS_Finsa_2023_Capitulo-4.pdf">
-                <p>
-                  CAPÍTULO 4
-                  <br><b>
-                  <span style="color:#ff8f43; font-weight:700">/ </span>
-                  Gobernanza 
-                  </b>
-                  <img src="im/arr-dwn.svg" style="width:1.2vw">
-                </p>
-                </a>
-
-                <p><br></p>
+                <div style="margin-top: 20px;">
+                  <ol style="list-style: none; padding-left: 0;">
+                     <li>
+                      <a target="_new" href="pdf/IAS_Finsa_2023_Presidente.pdf" style="display:block; padding: 10px; text-decoration: none; color:#4C5C6E;  display: flex; justify-content: space-between; align-items: center;">
+                       
+                         <span>Carta del Presidente y Director General</span>
+                         
+                         <img src="im/arr-dwn.svg" style="width:1.2vw; vertical-align:middle;">
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_new" href="pdf/IAS_Finsa_2023_Capitulo-1.pdf" style="display:block; padding: 10px; text-decoration: none; color:#4C5C6E;  display: flex; justify-content: space-between; align-items: center;">
+                         <span style="color:#00adef; font-weight:700; margin-right:5px;">01</span> Sobre Finsa  <img src="im/arr-dwn.svg" style="width:1.2vw; vertical-align:middle;">
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_new" href="pdf/IAS_Finsa_2023_Capitulo-2.pdf" style="display:block; padding: 10px; text-decoration: none; color:#4C5C6E; display: flex; justify-content: space-between; align-items: center;">
+                         <span style="color:#00E6B8; font-weight:700; margin-right:5px;">02</span> Medio Ambiente <img src="im/arr-dwn.svg" style="width:1.2vw; vertical-align:middle;">
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_new" href="pdf/IAS_Finsa_2023_Capitulo-3.pdf" style="display:block; padding: 10px; text-decoration: none; color:#4C5C6E; display: flex; justify-content: space-between; align-items: center;">
+                         <span style="color:#1976D2; font-weight:700; margin-right:5px;">03</span> Talento, cultura corporativa y comunidad <img src="im/arr-dwn.svg" style="width:1.2vw; vertical-align:middle;">
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_new" href="pdf/IAS_Finsa_2023_Capitulo-4.pdf" style="display:block; padding: 10px; text-decoration: none; color:#4C5C6E; display: flex; justify-content: space-between; align-items: center;">
+                         <span style="color:#FF9800; font-weight:700; margin-right:5px;">04</span> Gobernanza <img src="im/arr-dwn.svg" style="width:1.2vw; vertical-align:middle;">
+                      </a>
+                    </li>
+                     <li>
+                      <a target="_new" href="pdf/IAS_Finsa_2023_AcercaDe.pdf" style="display:block; padding: 10px; text-decoration: none; color:#4C5C6E; display: flex; justify-content: space-between; align-items: center;">
+                         Acerca de este informe <img src="im/arr-dwn.svg" style="width:1.2vw; vertical-align:middle;">
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_new" href="pdf/IAS_Finsa_2023_Indice-GRI-SASB.pdf" style="display:block; padding: 10px; text-decoration: none; color:#4C5C6E; display: flex; justify-content: space-between; align-items: center;">
+                         Índice GRI / Índice SASB <img src="im/arr-dwn.svg" style="width:1.2vw; vertical-align:middle;">
+                      </a>
+                    </li>
+                  </ol>
+                </div>
 
 
-                <a target="_new" href="pdf/IAS_Finsa_2023_AcercaDe.pdf">
-                <p>
-                  <span style="color:#00adef; font-weight:700">/ </span>
-                  Acerca de este informe
-                  <img src="im/arr-dwn.svg" style="width:1.2vw">
-                </p>
-                </a>
 
-                <a target="_new" href="pdf/IAS_Finsa_2023_Indice-GRI-SASB.pdf">
-                <p>
-                  <span style="color:#00adef; font-weight:700">/ </span>
-                  Índice GRI e Índice SASB
-                  <img src="im/arr-dwn.svg" style="width:1.2vw">
-                </p>
-                </a>
 
                 
               </div>
-              <div class="halfcircle" style="width:37%; text-align: right; ">
-                <img src="im/halfcircle.svg" style="position: relative; width:100%">
-              </div>
+            </div>
+             <div class="w50 flex5">
+              <img src="im/descargas-foto.jpg" style="width:85%; margin:auto; position:relative;
+              box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.35);" data-aos="fade-down">
             </div>
           </div>
         
@@ -181,7 +163,7 @@ box-sizing: content-box;
       </a>
     </div>
     <div style="width:32%; text-align: center;">
-      © 2024 Finsa<sup>&reg;</sup>
+      © 2024 Finsa<sup>®</sup>
     </div>
     <div style="width:32%">
     </div>
@@ -337,6 +319,4 @@ $(window).scroll(function (event) {
 </body>
 </html>
 HTML;
-
-
 ?>
