@@ -57,6 +57,7 @@ echo <<<HTML
     left: 41.8vw;
     top: 4.3vw;
     font-size: 7vw;
+    color: #1976D2; 
   }
 
   /* Estilos para la animación del texto */
@@ -69,7 +70,7 @@ echo <<<HTML
   .evolucion-texto {
     position: relative;
     z-index: 1;
-    color: #1976D2; /* Todo el texto en azul */
+    color: #1976D2; 
   }
 
   .evolucion-linea-animada {
@@ -81,7 +82,7 @@ echo <<<HTML
     background: linear-gradient( #0051ff 100%);
     background-size: 10% 106%;
     background-position: right center;
-    animation: animacionLineaReverse 5s linear infinite;
+    animation: animacionLineaReverse 3s linear forwards;
     z-index: 0;
     pointer-events: none;
     background-repeat: no-repeat;
@@ -97,18 +98,19 @@ echo <<<HTML
     background-size: 10% 106%;
     background-position: right center;
     mix-blend-mode: difference;
-    animation: animacionLineaReverse 5s linear infinite;
+    animation: animacionLineaReverse 3s linear forwards;
     z-index: 2;
     pointer-events: none;
     background-repeat: no-repeat;
     transform: skewX(-20deg);
+    opacity: 0.5;
   }
   @keyframes animacionLineaReverse {
     0% {
       background-position: right center;
     }
     100% {
-      background-position: left center;
+            background-position: 65% center; 
     }
   }
 
@@ -601,15 +603,13 @@ echo <<<HTML
   <!-- LINEA HORIZONTAL AQUI -->
   <div class="portada-linea"></div>
   <div class="portadafoto-texto-principal portadafoto-texto-principal-ruta" data-aos="fade-right">
-    <span class="evolucion-texto-wrapper">
-      <span class="evolucion-texto">EVOLUCIÓN</span>
-    </span>
+    EVOLUCIÓN
   </div>
   <div class=" evolucion-texto portadafoto-texto-principal portadafoto-texto-principal-sostenibilidad" data-aos="fade-up">
     ESTRATÉGICA
   </div>
-        <span class="evolucion-linea-animada"></span>
-                <span class="evolucion-linea-animada2"></span>
+        <!-- <span class="evolucion-linea-animada"></span>
+                <span class="evolucion-linea-animada2"></span> -->
 
 
 </div>
@@ -849,7 +849,7 @@ echo <<<HTML
 </style>
 
 <div id="mainnumbers"
-  style="width:100vw; background-image: url(im/00/fondo-numbers.jpg); background-size: cover;border-top:1px solid white;border-bottom:1px solid white;">
+  style="width:100vw; background-image: url(im/2024/Cifras.png); background-size: cover;border-top:1px solid white;border-bottom:1px solid white;">
 
   <div style="width:80%; margin:5vw auto;">
     <img src="im/00/finsa-en-numeros.svg" class="fen" data-aos="fade-down" />
