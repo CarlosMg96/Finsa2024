@@ -39,6 +39,7 @@ echo <<<HTML
 
     .card-content {
         font-family: sans-serif;
+        margin-bottom: 20px;
     }
 
     .year-selector {
@@ -119,7 +120,7 @@ echo <<<HTML
                     <img src="im/descargas-foto.jpg" class="image-download">
                 </a>
                 <a id="link-2022" class="download-link" href="pdf/IAS_Finsa_2022_programado.pdf">
-                    <img src="im/descargas-foto.jpg" class="image-download">
+                    <img src="im/2024/Portada-IS-Finsa-2024.png" class="image-download">
                 </a>
             </div>
         </div>

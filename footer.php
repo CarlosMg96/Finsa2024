@@ -25,7 +25,7 @@ if (!empty($next1)) {
 
   echo <<<HTML
 
-<div id="descargas" style="display:inline-block; width:100%; font-size:0.7em; padding:0.6em 0.8em 0.3em 0.8em;background-color: #172b54;color:white;">
+<!-- <div id="descargas" style="display:inline-block; width:100%; font-size:0.7em; padding:0.6em 0.8em 0.3em 0.8em;background-color: #172b54;color:white;">
   <a href="$prev1">
     <img src="im/arr-left-wh.svg" style="height:20px; vertical-align: middle;"> ANTERIOR
   </a>
@@ -33,7 +33,7 @@ if (!empty($next1)) {
   <a href="$next1" style="float:right;">
     SIGUIENTE <img src="im/arr-right-wh.svg" style="height:20px;  vertical-align: middle; ">
   </a>
-</div>
+</div> -->
 
 <style type="text/css">
 
@@ -52,10 +52,10 @@ if (!empty($next1)) {
   }
 </style>
 
-<div style="positon:relative;width:100vw;  border-top:1px solid #fff; border-bottom:1px solid #fff; background-color:#fff;"  >
+<div style="positon:relative;width:100vw;  border-top:1px solid #fff; border-bottom:1px solid #fff; background-color:#F2F4F6;"  >
   
         <div style="width:80%; margin:80px auto 0px auto;" >
-          <h1 data-aos="fade-right">Descargas</h1>
+          <h1 style="color:#000;" data-aos="fade-right">Descargas</h1>
           <p style="font-size:1.2em; color:#4C5C6E;">Explora más de nuestro Informe Anual de Sostenibilidad 2024 o descarga por separado las secciones en PDF.</p>
         </div>
 
@@ -118,7 +118,7 @@ if (!empty($next1)) {
               </div>
             </div>
              <div class="w50 flex5" style="align-items: center;">
-              <img src="im/descargas-foto.jpg" style="width:85%; margin:auto; position:relative;
+              <img src="im/2024/Portada-IS-Finsa-2024.png" style="width:85%; margin:auto; position:relative;
               box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.35);" data-aos="fade-down">
                               <a href='pdf/IAS_Finsa_2023_programado.pdf'>
                     <button style="background-color:#fff; border:1px solid #ccc; padding:10px 20px; border-radius:25px; cursor:pointer;">Descargar el informe completo</button>

@@ -166,7 +166,6 @@ echo <<<HTML
     width: 100%;
     height: 2px;
     background-color: #1A2B49;
-    margin: 20px 0;
 }
 
 .three-container {
@@ -239,6 +238,42 @@ echo <<<HTML
     
   }
 
+  .data-text{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .data-text p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #1A2B49;
+  }
+
+ .data-asg {
+  font-size: 1.4em;
+  line-height: 1.5;
+  color: #1A2B49;
+  margin-bottom: 20px;
+  margin-left: 40%;
+  width: 20%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .data-asg {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+
+.main-content{
+  background: #F2F4F6;
+  padding: 20px;
+  witdh: 100%;
+}
+
 </style>
 
 <div class="container">
@@ -247,22 +282,23 @@ echo <<<HTML
   <div style="display: flex; width: 100vw; min-height: 780px; font-family: 'Helvetica Neue', sans-serif;">
     
     <!-- Columna de texto -->
-    <div style="width: 700px; background: #E8F9FF; display: flex; align-items: center; transform: skewX(-6deg);">
+    <div style="width: 800px; display: flex; align-items: center; transform: skewX(-6deg);">
       <div style="width: 80%; margin: auto;">
         <div class="carta-presidente-texto-contenido" data-aos="fade-right">
           <h3 style="color: #1A2B49; font-size: 1.4em; margin-bottom: 5px; font-weight: 500;">Carta del presidente y</h3>
           <h2 style="color: #1976D2; font-weight: 800; font-size: 2.6em; margin: 0;">DIRECTOR GENERAL</h2>
+        </div>
+
+        <div class="main-content" data-aos="fade-right">
           <p style="color: #1A2B49; font-size: 1.15em; line-height: 1.6; margin-top: 20px;">
             El sector inmobiliario industrial actual se distingue por un dinamismo en constante evolución, donde las demandas del mercado se transforman en valiosas oportunidades.
           </p>
-        </div>
-
-        <!-- Botón de descarga -->
+           <!-- Botón de descarga -->
         <div class="btn-letter-dowload" data-aos="fade-right" style="margin-top: 30px;">
           <a href="#" style="
             display: inline-block;
-            background-color: #1976D2;
-            color: white;
+            background-color:rgb(241, 248, 255);
+            color: black;
             padding: 12px 25px;
             border-radius: 25px;
             text-decoration: none;
@@ -272,6 +308,7 @@ echo <<<HTML
             transition: background-color 0.3s;">
             DESCARGAR CARTA DEL PRESIDENTE
           </a>
+        </div>
         </div>
       </div>
     </div>
@@ -292,15 +329,16 @@ background-color: #877E6D;
   <section class="second-container"> 
     <div class="flex-row">
       <div class="flex-col second-container-image" data-aos="fade-up-right">
-        <img src="im/00/portada-foto.jpg" alt="">
+        <img src="im/2024/FINSA_Parque_Industrial_by_Mino_Mora_0781.png" alt="">
       </div>
-      <div class="flex-col" data-aos="fade-up-left">
+      <div class="flex-col data-text" data-aos="fade-up-left">
         <p>
           Esto nos ha permitido definir estrategias efectivas
           que, además de impulsar nuestro crecimiento,
           están alineadas con principios de sostenibilidad,
           garantizando un desarrollo responsable y a largo
           plazo.
+          <br><br><br>
           Continuamos fortaleciendo nuestra relación con
           las instituciones financieras, consolidándonos
           como un referente en el desarrollo inmobiliario
@@ -315,22 +353,20 @@ background-color: #877E6D;
           productividad, brindando espacios que impulsan
           su crecimiento y competitividad.
         </p>
+        <div class="divider"></div>
       </div>
     </div>
   </section>
 
   <section class="three-container">
-    <div class="divider"></div>
-    <b style="color:#1A2B49; font-size: 1.4em; line-height: 1.4;" data-aos="zoom-in">
-      Estamos convencidos de la importancia de integrar los
-principios ASG (Ambientales, Sociales y de Gobernanza) en
-todas nuestras operaciones.
+    <b class="data-asg" data-aos="zoom-in">
+      Estamos convencidos de la importancia de integrar los principios ASG (Ambientales, Sociales y de Gobernanza) en todas nuestras operaciones.
     </b>
   </section>
 
    <section class="second-container"> 
     <div class="flex-row">
-      <div class="flex-col" data-aos="fade-up-right">
+      <div class="flex-col data-text" data-aos="fade-up-right">
         <p>
           Por ello, seguimos fortaleciendo los pilares de
 nuestro modelo de sostenibilidad empresarial:
@@ -352,9 +388,7 @@ eficientes y la adopción de las mejores prácticas
 sostenibles.
         </p>
         <b style="color:#1A2B49; font-size: 1.4em; line-height: 1.4;">
-      Estamos convencidos de la importancia de integrar los
-principios ASG (Ambientales, Sociales y de Gobernanza) en
-todas nuestras operaciones.
+      Nuestro capital humano es el pilar fundamental de nuestra empresa.
     </b>
     <p>
       Su compromiso con la excelencia, el servicio y la
@@ -380,9 +414,18 @@ Gracias a todos ustedes por ser parte de la
 historia de éxito de FINSA
 .
     </p>
+   <div style="display: flex; align-items: center; gap: 10px; margin-top: 20px;">
+  <img src="im/whitediag.svg" height="70px" style="filter: invert(1);">
+
+  <div>
+    <b style="color:#1A2B49; font-size: 1.4em; line-height: 1.4; margin: 0;">Sergio Argüelles González</b>
+    <p style="margin: 0;">Presidente del Consejo de Administración <br> y director general</p>
+  </div>
+</div>
+
       </div>
-       <div class="flex-col for-container-image" data-aos="fade-up-left">
-        <img src="im/00/portada-foto.jpg" alt="">
+       <div class="flex-col for-container-image">
+        <img src="im/2024/FINSA_Parque_Industrial_by_Mino_Mora_0718-2.png" alt="">
       </div>
     </div> 
   </section>

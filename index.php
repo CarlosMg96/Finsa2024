@@ -10,12 +10,12 @@ echo <<<HTML
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-image: url(im/00/portada-foto.jpg);
+    background-image: url(im/2024/portada.jpg);
     background-position: bottom left;
     background-size: cover;
   }
 
-  .portadacurved {
+  /* .portadacurved {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -24,7 +24,7 @@ echo <<<HTML
   .portadacurve {
     position: absolute;
     bottom: 0;
-  }
+  } */
 
   .portadapeople {
     position: absolute;
@@ -75,15 +75,22 @@ echo <<<HTML
   }
 
   .portadafoto-texto-principal-ruta {
-    left: 22.8vw;
-    top: 7.3vw;
-    font-size: 4.9vw;
+    left: 41.8vw;
+    top: 4.3vw;
+    font-size: 7vw;
+    color: #1976D2 !important;
+  }
+
+  .part-white {
+    font-weight: 700;
+    color: white;
   }
 
   .portadafoto-texto-principal-sostenibilidad {
-    left: 21vw;
-    top: 10.5vw;
+    left: 34vw;
+    top: 12.5vw;
     font-size: 8vw;
+    color: #1976D2 !important;
   }
 
   /* NUEVOS ESTILOS PARA LA LINEA */
@@ -93,7 +100,7 @@ echo <<<HTML
     background-color: white;
     position: absolute;
     right: 0px;
-    top: 20.8vw; /* Valor por defecto para PC */
+    top: 21.8vw; /* Valor por defecto para PC */
   }
 
   /* NUEVA CLASE PARA LOS NUMEROS CON ESTILO */
@@ -162,7 +169,7 @@ echo <<<HTML
       width: 100vw;
       border-top: 1px solid #E9F2F9;
       border-bottom: 1px solid #E9F2F9;
-      background-color: #e8f9ff;
+      background-color: #F2F4F6;
   }
 
   .evolucion-estrategica-container {
@@ -173,14 +180,15 @@ echo <<<HTML
 
   .evolucion-estrategica-imagen {
       width: 50vw;
-      background: url('https://placehold.co/600x400') center center/cover no-repeat;
+      background: url('im/2024/DJI_0457-HDR-PANO.png') center center/cover no-repeat;
       clip-path: polygon(0 0, 90% 0, 75% 100%, 0% 100%);
-      min-height: 400px;
+      min-height: 600px;
+      max-width: 550px;
   }
 
   .evolucion-estrategica-texto {
       width: 50vw;
-      background: #e8f9ff;
+      background: #F2F4F6;
       display: flex;
       align-items: center;
       padding-bottom: 10px;
@@ -191,10 +199,29 @@ echo <<<HTML
       margin: auto;
   }
 
+  .evolucion-estrategica-texto-contenido h2 {
+      color: #1976D2;
+      font-size: 2.7em;
+  }
+
+  .evolucion-estrategica-texto-contenido p {
+      font-size: 1.2em;
+      font-line-height: 1.6;
+      color: #1A2B49;
+      margin-bottom: 20px;
+  }
+
+  .bold-text {
+      font-weight: bold;
+      color: #1A2B49;
+      font-size: 1.4em;
+  }
+
   /* Estilos para la sección "Carta del Presidente" */
   .carta-presidente {
       position: relative;
       width: 100vw;
+      min-height: 600px;
       border-top: 1px solid #fff;
       border-bottom: 1px solid #fff;
       background-color: #fff;
@@ -211,11 +238,46 @@ echo <<<HTML
 
   .carta-presidente-texto-contenido {
       width: 80%;
-      margin: 80px auto 20px auto;
+      margin: 90px auto 20px auto;
+  }
+
+  .carta-presidente-texto-contenido h3 {
+      color: #1A2B49;
+      font-size: 1.6em;
+      margin-bottom: 5px;
+  }
+
+  .carta-presidente-texto-contenido h2 {
+      color: #1976D2;
+      font-weight: 700;
+      font-size: 2.5em;
+      margin-top: 0;
+  }
+
+  .carta-presidente-texto-contenido p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #1A2B49;
+      margin-bottom: 20px;
+  }
+
+  .carta-presidente-texto-contenido b {
+      font-size: 1.2em;
+      line-height: 1.6;
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-top: 24px;
+  }
+
+  .carta-presidente-texto-contenido a {
+      color: #00AEEF;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.2em;
   }
 
   .carta-presidente-imagen {
-      width: 50%;
+      width: 40%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -287,8 +349,8 @@ echo <<<HTML
   }
 
   .contenido-item-derecha img {
-      width: 18px;
-      margin-right: 5px;
+      width: 32px;
+      margin-right: 10px;
   }
 
   /* Estilos para la sección "FINSA EN NÚMEROS" */
@@ -321,7 +383,7 @@ echo <<<HTML
   /* Estilos para la sección "HIGHLIGHTS" */
   .highlights-section {
       width: 100vw;
-      background-color: #e8f9ff;
+      background-color: #fff;
       font-family: sans-serif;
       color: #1A2B49;
       position: relative;
@@ -334,9 +396,9 @@ echo <<<HTML
   }
 
   .highlights-imagen {
-      width: 50vw;
-      background: url('https://placehold.co/600x400') center center/cover no-repeat;
-      height: 500px;
+      width: 30vw;
+      background: url('im/2024/FINSA_Parque_Industrial_by_Mino_Mora_0748.png') center center/cover no-repeat;
+      height: 600px;
       clip-path: polygon(0 0, 90% 0, 75% 100%, 0% 100%);
   }
 
@@ -475,21 +537,14 @@ echo <<<HTML
 </div>
 
 <div class="portadafoto">
-  <img src="im/00/portada-curved.png" class="portadacurved" data-aos="fade-left" />
-  <img src="im/00/portada-curve.png" class="portadacurve" data-aos="fade-left" />
   <img src="im/00/portada-people.png" class="portadapeople" data-aos="fade-right" />
-  <img src="im/00/portada-informe.png" class="portadainforme" />
   <!-- LINEA HORIZONTAL AQUI -->
   <div class="portada-linea"></div>
-
-  <div class="portadafoto-texto-principal portadafoto-texto-principal-siguiendo" data-aos="fade-down">
-    Siguiendo
-  </div>
   <div class="portadafoto-texto-principal portadafoto-texto-principal-ruta" data-aos="fade-right">
-    la ruta de la
+    EVOL<span class="part-white">UCI</span>ÓN
   </div>
   <div class="portadafoto-texto-principal portadafoto-texto-principal-sostenibilidad" data-aos="fade-up">
-    sostenibilidad
+    ESTRA<span class="part-white">TÉ</span>GICA
   </div>
 </div>
 
@@ -502,7 +557,7 @@ echo <<<HTML
     <div class="evolucion-estrategica-imagen"></div>
     <div class="evolucion-estrategica-texto" data-aos="fade-right">
       <div class="evolucion-estrategica-texto-contenido">
-        <h2 style="color:#1976D2; font-weight:700;">EVOLUCIÓN ESTRATÉGICA</h2>
+        <h2 style="color:#1976D2; font-weight:900;">EVOLUCIÓN ESTRATÉGICA</h2>
         <p>
           2024 fue un año que reafirmó nuestra capacidad para convertir
           desafíos en oportunidades, impulsando una evolución estratégica que
@@ -514,7 +569,7 @@ echo <<<HTML
           en nuestra contribución al desarrollo de México, en la preservación del
           planeta y en el bienestar nuestras comunidades
         </p>
-        <b style="color:#1A2B49;">
+        <b class="bold-text">
           Este año de evolución marcó un paso firme hacia el
           crecimiento sostenido, guiados con visión,
           responsabilidad y determinación.
@@ -529,9 +584,9 @@ echo <<<HTML
     <div class="carta-presidente-container">
         <div class="carta-presidente-texto">
             <div class="carta-presidente-texto-contenido" data-aos="fade-right">
-                <h3 style="color: #1A2B49; font-size: 1.2em; margin-bottom: 5px;">Carta del presidente y</h3>
-                <h2 style="color:#1976D2; font-weight:700; font-size: 2em; margin-top: 0;">DIRECTOR GENERAL</h2>
-                <b style="color:#1A2B49;">
+                <h3 >Carta del presidente y</h3>
+                <h2 >DIRECTOR GENERAL</h2>
+                <b >
                     Estamos convencidos de la importancia de integrar
                     los principios ASG (Ambientales, Sociales y de
                     Gobernanza) en todas nuestras operaciones.
@@ -544,13 +599,13 @@ echo <<<HTML
                     valor, la responsabilidad y resiliencia, así como el sentido sostenible
                     del negocio.
                 </p>
-                <a href="seguir-leyendo" style="color: #00AEEF; font-weight: bold; text-decoration: none;">
+                <a href="carta-del-presidente" >
                   Seguir leyendo
                 </a>
             </div>
         </div>
         <div class="carta-presidente-imagen">
-            <img src="https://placehold.co/600x400" data-aos="fade-down">
+            <img src="im/2024/Carta1_EDGE-Oficinas-FINSA-Aguascalientes.png" data-aos="fade-down">
         </div>
     </div>
 </div>
@@ -563,12 +618,15 @@ echo <<<HTML
   <ul class="contenido-lista">
     <li class="contenido-item">
       <div class="contenido-item-izquierda" data-aos="fade-right">
-        <img src="URL_DE_LA_IMAGEN_FLECHA" alt="Flecha">
+        <img src="im/arr-right-blue.svg" alt="Flecha" style="width: 42px;">
+        <div>
+          <img src="im/whitediag.svg" alt="" style=" max-height: 40px;">
+        </div>
         <span>Carta del Presidente y Director General</span>
       </div>
       <div class="contenido-item-derecha" data-aos="fade-left">
         <a href="#">
-          <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar">
+          <img src="im/arr-dwn.svg" alt="Descargar">
           DESCARGA CARTA
         </a>
       </div>
@@ -576,7 +634,10 @@ echo <<<HTML
 
     <li class="contenido-item">
       <div class="contenido-item-izquierda" data-aos="fade-right">
-        <span class="numero-con-estilo" style="color: #00AEEF; width: 60px;#00AEEF; width: 60px; font-size:2em;">01</span>
+        <span class="numero-con-estilo" style="color: #00AEEF; width: 60px;#00AEEF; width: 60px; font-size:4em;">01</span>
+        <div>
+          <img src="im/whitediag.svg" alt="" style=" max-height: 40px;">
+        </div>
         <div>
           <p style="margin: 0; font-size: 0.9em; color: #A0C4FF;">EVOLUCIÓN QUE REAFIRMA NUESTRO LIDERAZGO</p>
           <p style="margin: 5px 0 0; font-weight: bold;">Sobre FINSA</p>
@@ -584,7 +645,7 @@ echo <<<HTML
       </div>
       <div class="contenido-item-derecha" data-aos="fade-left">
         <a href="#">
-          <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar">
+          <img src="im/arr-dwn.svg" alt="Descargar">
           DESCARGA CAPÍTULO
         </a>
       </div>
@@ -592,7 +653,10 @@ echo <<<HTML
 
     <li class="contenido-item">
       <div class="contenido-item-izquierda" data-aos="fade-right">
-        <span class="numero-con-estilo" style="color: #00E6B8; width: 60px;#00AEEF; width: 60px; font-size:2em;">02</span>
+        <span class="numero-con-estilo" style="color: #00E6B8; width: 60px;#00AEEF; width: 60px; font-size:4em;">02</span>
+        <div>
+          <img src="im/whitediag.svg" alt="" style=" max-height: 40px;">
+        </div>
         <div>
           <p style="margin: 0; font-size: 0.9em; color: #7CF2D0;">EVOLUCIÓN QUE SUMA A LA SOSTENIBILIDAD</p>
           <p style="margin: 5px 0 0; font-weight: bold;">Medio ambiente</p>
@@ -600,7 +664,7 @@ echo <<<HTML
       </div>
       <div class="contenido-item-derecha" data-aos="fade-left">
         <a href="#">
-          <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar">
+          <img src="im/arr-dwn.svg" alt="Descargar">
           DESCARGA CAPÍTULO
         </a>
       </div>
@@ -608,7 +672,10 @@ echo <<<HTML
 
     <li class="contenido-item">
       <div class="contenido-item-izquierda" data-aos="fade-right">
-        <span class="numero-con-estilo" style="color:#d29819; width: 60px;#00AEEF; width: 60px; font-size:2em;">03</span>
+        <span class="numero-con-estilo" style="color:#d29819; width: 60px;#00AEEF; width: 60px; font-size:4em;">03</span>
+       <div>
+          <img src="im/whitediag.svg" alt="" style=" max-height: 40px;">
+        </div>
         <div>
           <p style="margin: 0; font-size: 0.9em; color: #d29819;">EVOLUCIÓN QUE NOS PERMITE HACER MÁS</p>
           <p style="margin: 5px 0 0; font-weight: bold;">Talento, cultura corporativa y comunidad</p>
@@ -616,7 +683,7 @@ echo <<<HTML
       </div>
       <div class="contenido-item-derecha" data-aos="fade-left">
         <a href="#">
-          <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar">
+          <img src="im/arr-dwn.svg" alt="Descargar">
           DESCARGA CAPÍTULO
         </a>
       </div>
@@ -624,7 +691,10 @@ echo <<<HTML
 
     <li class="contenido-item">
       <div class="contenido-item-izquierda" data-aos="fade-right">
-        <span class="numero-con-estilo" style="color: #FF9800; width: 60px;#00AEEF; width: 60px; font-size:2em;">04</span>
+        <span class="numero-con-estilo" style="color: #FF9800; width: 60px;#00AEEF; width: 60px; font-size:4em;">04</span>
+        <div>
+          <img src="im/whitediag.svg" alt="" style=" max-height: 40px;">
+        </div>
         <div>
           <p style="margin: 0; font-size: 0.9em; color: #FFCA80;">EVOLUCIÓN QUE NOS GUÍA CON INTEGRIDAD</p>
           <p style="margin: 5px 0 0; font-weight: bold;">Gobernanza</p>
@@ -632,7 +702,7 @@ echo <<<HTML
       </div>
       <div class="contenido-item-derecha" data-aos="fade-left">
         <a href="#">
-          <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar">
+          <img src="im/arr-dwn.svg" alt="Descargar">
           DESCARGA CAPÍTULO
         </a>
       </div>
@@ -653,11 +723,11 @@ echo <<<HTML
   }
 
   .bignum {
-    font-size: 5vw;
+    font-size: 15vw;
   }
 
   .smalltext {
-    font-size: 0.9vw;
+    font-size: 1.2vw;
     text-transform: uppercase;
   }
 
@@ -698,7 +768,7 @@ echo <<<HTML
   }
 </style>
 
-<div id="mainnumbers" style="width:100vw; background-image: url(im/00/fondo-numbers.jpg); background-size: cover;border-top:1px solid white;border-bottom:1px solid white;" >
+<div id="mainnumbers" style="width:100vw; background-image: url(im/2024/Cifras.png); background-size: cover;border-top:1px solid white;border-bottom:1px solid white;" >
 
   <div style="width:80%; margin:5vw auto;">
     <img src="im/00/finsa-en-numeros.svg" class="fen" data-aos="fade-down" />
@@ -711,7 +781,7 @@ echo <<<HTML
           <td rowspan=2>
             <img src="im/whitediag.svg" style="height:100%">
           </td>
-          <td class="bignum special-number" ><span class="counter bn">70</span></td>
+          <td class="bignum special-number" ><span class="counter bn">+70</span></td>
           </tr>
           <tr>
             <td class="smalltext">
@@ -727,11 +797,11 @@ echo <<<HTML
           <td rowspan=2>
             <img src="im/whitediag.svg" style="height:100%">
           </td>
-          <td class="bignum special-number"><span class="counter bn">46</span></td>
+          <td class="bignum special-number"><span class="counter bn">3.4</span></td>
           </tr>
           <tr>
             <td class="smalltext">
-              años de<br>experiencia
+              Millones de M<span style="font-size: 12px;"><sup>2</sup></span> Administrados<br> y arrendados
             </td>
           </tr>
         </table>
@@ -743,27 +813,11 @@ echo <<<HTML
           <td rowspan=2>
             <img src="im/whitediag.svg" style="height:100%">
           </td>
-          <td class="bignum special-number"><span class="counter bn">21</span></td>
+          <td class="bignum special-number"><span class="counter bn">14</span></td>
           </tr>
           <tr>
             <td class="smalltext">
-              Parques<br>industriales
-            </td>
-          </tr>
-        </table>
-      </div>
-
-      <div class="numbers1" data-aos="fade-down" data-aos-duration="1600">
-        <table class="numT">
-          <tr>
-          <td rowspan=2>
-            <img src="im/whitediag.svg" style="height:100%">
-          </td>
-          <td class="bignum special-number"><span class="counter bn">99</span>%</td>
-          </tr>
-          <tr>
-            <td class="smalltext">
-              DE OCUPACIÓN
+              Millones de M<span style="font-size: 12px;"><sup>2</sup></span><br>desarrollados
             </td>
           </tr>
         </table>
@@ -779,11 +833,11 @@ echo <<<HTML
           <td rowspan=2>
             <img src="im/whitediag.svg" style="height:100%">
           </td>
-          <td class="bignum special-number"><span class="counter bn">3.2</span><span style="font-size:3vw">MILL</span></td>
+          <td class="bignum special-number"><span class="counter bn">32</span></td>
           </tr>
           <tr>
             <td class="smalltext">
-              m<sup>2</sup> administrados
+              parques <br> industriales <br> en operación
             </td>
           </tr>
         </table>
@@ -795,11 +849,11 @@ echo <<<HTML
           <td rowspan=2>
             <img src="im/whitediag.svg" style="height:100%">
           </td>
-          <td class="bignum special-number"><span class="counter bn">12</span><span style="font-size:3vw">MILL</span></td>
+          <td class="bignum special-number"><span class="counter bn">300</span><span style="font-size:3vw">MILL</span></td>
           </tr>
           <tr>
             <td class="smalltext">
-              m<sup>2</sup> desarrollados
+              empleos generados
             </td>
           </tr>
         </table>
@@ -841,7 +895,7 @@ echo <<<HTML
   <div class="highlights-container">
     <div class="highlights-imagen"></div>
     <div class="highlights-texto" data-aos="fade-right">
-      <h2 style="font-size: 3em; font-weight: bold; margin-bottom: 0.5em; color: #1976D2;" data-aos="fade-right">HIGHLIGHTS</h2>
+      <h2 style="font-size: 3em; font-weight: bold; margin-bottom: 0.5em; color: #000;" data-aos="fade-right">HIGHLIGHTS</h2>
       <p style="font-size: 1.2em; margin-bottom: 2em;" data-aos="fade-right">2024</p>
 
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
