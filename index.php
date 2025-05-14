@@ -69,7 +69,7 @@ echo <<<HTML
   .evolucion-texto {
     position: relative;
     z-index: 1;
-    color:rgb(255, 255, 255); /* Todo el texto en azul */
+    color: #1976D2; /* Todo el texto en azul */
   }
 
   .evolucion-linea-animada {
@@ -111,7 +111,7 @@ echo <<<HTML
     left: 34vw;
     top: 12.5vw;
     font-size: 8vw;
-    color:rgb(255, 255, 255) !important;
+   color:#1976D2;
   }
 
   /* NUEVOS ESTILOS PARA LA LINEA */
