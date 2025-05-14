@@ -154,7 +154,7 @@ $descargar
 
 box-sizing: content-box; 
 -->
-<div style="width:100%; font-size:0.8em; color:#4C5C6E; background-color:#EDF1F4; border:1px solid transparent;">
+<div style="width:100%; font-size:0.8em; color:#fff; background-color:#011f4d; border:1px solid transparent;">
   <div class="flex1" style="width:96%;margin:2em auto; border:1px solid transparent;" >
     <div style="width:32%">
       <a href="https://generadorestudio.com">

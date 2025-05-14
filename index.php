@@ -544,8 +544,8 @@ echo <<<HTML
                     valor, la responsabilidad y resiliencia, así como el sentido sostenible
                     del negocio.
                 </p>
-                <a href="seguir-leyendo">
-                    Seguir leyendo
+                <a href="seguir-leyendo" style="color: #00AEEF; font-weight: bold; text-decoration: none;">
+                  Seguir leyendo
                 </a>
             </div>
         </div>
@@ -608,9 +608,9 @@ echo <<<HTML
 
     <li class="contenido-item">
       <div class="contenido-item-izquierda" data-aos="fade-right">
-        <span class="numero-con-estilo" style="color: #1976D2; width: 60px;#00AEEF; width: 60px; font-size:2em;">03</span>
+        <span class="numero-con-estilo" style="color:#d29819; width: 60px;#00AEEF; width: 60px; font-size:2em;">03</span>
         <div>
-          <p style="margin: 0; font-size: 0.9em; color: #89C4F4;">EVOLUCIÓN QUE NOS PERMITE HACER MÁS</p>
+          <p style="margin: 0; font-size: 0.9em; color: #d29819;">EVOLUCIÓN QUE NOS PERMITE HACER MÁS</p>
           <p style="margin: 5px 0 0; font-weight: bold;">Talento, cultura corporativa y comunidad</p>
         </div>
       </div>
@@ -711,7 +711,7 @@ echo <<<HTML
           <td rowspan=2>
             <img src="im/whitediag.svg" style="height:100%">
           </td>
-          <td class="bignum">+ <span class="counter bn">70</span></td>
+          <td class="bignum special-number" ><span class="counter bn">70</span></td>
           </tr>
           <tr>
             <td class="smalltext">
@@ -727,7 +727,7 @@ echo <<<HTML
           <td rowspan=2>
             <img src="im/whitediag.svg" style="height:100%">
           </td>
-          <td class="bignum"><span class="counter bn">46</span></td>
+          <td class="bignum special-number"><span class="counter bn">46</span></td>
           </tr>
           <tr>
             <td class="smalltext">
@@ -743,7 +743,7 @@ echo <<<HTML
           <td rowspan=2>
             <img src="im/whitediag.svg" style="height:100%">
           </td>
-          <td class="bignum"><span class="counter bn">21</span></td>
+          <td class="bignum special-number"><span class="counter bn">21</span></td>
           </tr>
           <tr>
             <td class="smalltext">
@@ -759,7 +759,7 @@ echo <<<HTML
           <td rowspan=2>
             <img src="im/whitediag.svg" style="height:100%">
           </td>
-          <td class="bignum"><span class="counter bn">99</span>%</td>
+          <td class="bignum special-number"><span class="counter bn">99</span>%</td>
           </tr>
           <tr>
             <td class="smalltext">
@@ -779,7 +779,7 @@ echo <<<HTML
           <td rowspan=2>
             <img src="im/whitediag.svg" style="height:100%">
           </td>
-          <td class="bignum"><span class="counter bn">3.2</span><span style="font-size:3vw">MILL</span></td>
+          <td class="bignum special-number"><span class="counter bn">3.2</span><span style="font-size:3vw">MILL</span></td>
           </tr>
           <tr>
             <td class="smalltext">
@@ -795,7 +795,7 @@ echo <<<HTML
           <td rowspan=2>
             <img src="im/whitediag.svg" style="height:100%">
           </td>
-          <td class="bignum"><span class="counter bn">12</span><span style="font-size:3vw">MILL</span></td>
+          <td class="bignum special-number"><span class="counter bn">12</span><span style="font-size:3vw">MILL</span></td>
           </tr>
           <tr>
             <td class="smalltext">
@@ -810,13 +810,21 @@ echo <<<HTML
   </div><!-- 80 -->
 </div>
 
+
+
+
 <style type="text/css">
   /* Estilos para PC */
   .cont {
     width: 24%;
     position: relative;
   }
-
+.special-number {
+  font: 800 80px Arial;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+  font-size: 6vw; /* Make the numbers larger */
+}
   .ilinks {
     position: relative;
     width: 100%;
@@ -831,45 +839,45 @@ echo <<<HTML
     }
   }
 </style>
-<div class="highlights-section" data-aos="fade-right">
-    <div class="highlights-container">
-        <div class="highlights-imagen"></div>
-        <div class="highlights-texto">
-            <h2 style="font-size: 3em; font-weight: bold; margin-bottom: 0.5em; color: #1976D2;">HIGHLIGHTS</h2>
-            <p style="font-size: 1.2em; margin-bottom: 2em;">2024</p>
+<div class="highlights-section">
+  <div class="highlights-container">
+    <div class="highlights-imagen"></div>
+    <div class="highlights-texto" data-aos="fade-right">
+      <h2 style="font-size: 3em; font-weight: bold; margin-bottom: 0.5em; color: #1976D2;" data-aos="fade-right">HIGHLIGHTS</h2>
+      <p style="font-size: 1.2em; margin-bottom: 2em;" data-aos="fade-right">2024</p>
 
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-                <div style="width: 45%; margin-bottom: 2em; text-align: left; position: relative;">
-                    <span class="numero-con-estilo" style="font-size:                 7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">10</span>
-                    <span style="font-size: 1em; display: block; color: #1976D2;">Estados de<br>la República</span>
-                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
-                </div>
-
-                <div style="width: 45%; margin-bottom: 2em; text-align: left; position: relative;">
-                    <span class="numero-con-estilo" style="font-size: 7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">4</span>
-                    <span style="font-size: 1em; display: block; color: #1976D2;">Parques Proveedores<br>de la industria<br>automotriz</span>
-                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
-                </div>
-            </div>
-
-            <div style="display: flex;flex-wrap: wrap;justify-content: space-between;position: relative;align-items: flex-end;">
-                <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;">
-                    <span style="font-size: 0.8em; color: #1976D2;">Cierre de la segunda<br>etapa del fondo de<br>inversión FINSA V</span>
-                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
-                </div>
-
-                <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;">
-                    <span style="font-size: 0.8em; color: #1976D2;">Formamos parte por<br>segundo año de las<br>500 empresas más importantes<br>de México, de la revista expansión</span>
-                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
-                </div>
-
-                <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;">
-                    <span style="font-size: 0.8em; color: #1976D2;">Inicio del proyecto de<br>transformación digital:<br>Innovación estratégica<br>Sostenible (IES)</span>
-                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
-                </div>
-            </div>              
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+        <div style="width: 45%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
+          <span class="numero-con-estilo" style="font-size:7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">10</span>
+          <span style="font-size: 1em; display: block; color: #1976D2;">Estados de<br>la República</span>
+          <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
         </div>
+
+        <div style="width: 45%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
+          <span class="numero-con-estilo" style="font-size: 7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">4</span>
+          <span style="font-size: 1em; display: block; color: #1976D2;">Parques Proveedores<br>de la industria<br>automotriz</span>
+          <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
+        </div>
+      </div>
+
+      <div style="display: flex;flex-wrap: wrap;justify-content: space-between;position: relative;align-items: flex-end;">
+        <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
+          <span style="font-size: 0.8em; color: #1976D2;">Cierre de la segunda<br>etapa del fondo de<br>inversión FINSA V</span>
+          <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
+        </div>
+
+        <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
+          <span style="font-size: 0.8em; color: #1976D2;">Formamos parte por<br>segundo año de las<br>500 empresas más importantes<br>de México, de la revista expansión</span>
+          <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
+        </div>
+
+        <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
+          <span style="font-size: 0.8em; color: #1976D2;">Inicio del proyecto de<br>transformación digital:<br>Innovación estratégica<br>Sostenible (IES)</span>
+          <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
+        </div>
+      </div>              
     </div>
+  </div>
 </div>
 
 HTML;
