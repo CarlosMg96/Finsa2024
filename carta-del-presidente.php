@@ -1,9 +1,10 @@
 <?php
+
 error_reporting(E_ALL);
 
-$thispage = "carta-del-presidente";
+$thispage = 'carta-del-presidente';
 
-require_once "header.php";
+require_once 'header.php';
 
 echo <<<HTML
 <style type="text/css">
@@ -265,7 +266,7 @@ echo <<<HTML
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 20px;
-  witdh: 100%;
+  width: 120%;
   margin-right: -120px;
   margin-top: 20px;
   height: 300px;
@@ -287,6 +288,12 @@ echo <<<HTML
   }
 }
 
+.extra-content{
+  width: 100%;
+  height: 100%;
+  background: #F2F4F6;
+}
+
 </style>
 
 <div class="container">
@@ -306,7 +313,6 @@ echo <<<HTML
           <p style="color: #1A2B49; font-size: 1.4em; line-height: 1.6; margin-top: 20px; font-weight: 500;">
             El sector inmobiliario industrial actual se distingue por un dinamismo en constante evolución, donde las demandas del mercado se transforman en valiosas oportunidades.
           </p>
-           <!-- Botón de descarga -->
         <div class="btn-letter-dowload" data-aos="fade-right" style="margin-top: 30px;">
           <a href="#" style="
             display: inline-block;
@@ -323,6 +329,7 @@ echo <<<HTML
           </a>
         </div>
         </div>
+        <div class="extra-content"></div>
       </div>
     </div>
 
@@ -445,8 +452,7 @@ historia de éxito de FINSA
 </div>
 HTML;
 
-$prev1 = "nuestra-empresa";
-$next1 = "impacto-social";
+$prev1 = 'nuestra-empresa';
+$next1 = 'impacto-social';
 
-require_once "footer.php";
-?>
+require_once 'footer.php';

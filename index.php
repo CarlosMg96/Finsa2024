@@ -605,7 +605,7 @@ echo <<<HTML
             </div>
         </div>
         <div class="carta-presidente-imagen">
-            <img src="im/2024/Carta1_EDGE-Oficinas-FINSA-Aguascalientes.png" data-aos="fade-down">
+            <img src="im/2024/casa_aguascalientes.png" data-aos="fade-down">
         </div>
     </div>
 </div>
