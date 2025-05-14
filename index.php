@@ -576,7 +576,7 @@ echo <<<HTML
 
     <li class="contenido-item">
       <div class="contenido-item-izquierda" data-aos="fade-right">
-        <span class="numero-con-estilo" style="color: #00AEEF; width: 60px; color: #00AEEF; width: 60px; font-size:2em;">01</span>
+        <span class="numero-con-estilo" style="color: #00AEEF; width: 60px;#00AEEF; width: 60px; font-size:2em;">01</span>
         <div>
           <p style="margin: 0; font-size: 0.9em; color: #A0C4FF;">EVOLUCIÓN QUE REAFIRMA NUESTRO LIDERAZGO</p>
           <p style="margin: 5px 0 0; font-weight: bold;">Sobre FINSA</p>
@@ -592,7 +592,7 @@ echo <<<HTML
 
     <li class="contenido-item">
       <div class="contenido-item-izquierda" data-aos="fade-right">
-        <span class="numero-con-estilo" style="color: #00E6B8; width: 60px; color: #00AEEF; width: 60px; font-size:2em;">02</span>
+        <span class="numero-con-estilo" style="color: #00E6B8; width: 60px;#00AEEF; width: 60px; font-size:2em;">02</span>
         <div>
           <p style="margin: 0; font-size: 0.9em; color: #7CF2D0;">EVOLUCIÓN QUE SUMA A LA SOSTENIBILIDAD</p>
           <p style="margin: 5px 0 0; font-weight: bold;">Medio ambiente</p>
@@ -608,7 +608,7 @@ echo <<<HTML
 
     <li class="contenido-item">
       <div class="contenido-item-izquierda" data-aos="fade-right">
-        <span class="numero-con-estilo" style="color: #1976D2; width: 60px; color: #00AEEF; width: 60px; font-size:2em;">03</span>
+        <span class="numero-con-estilo" style="color: #1976D2; width: 60px;#00AEEF; width: 60px; font-size:2em;">03</span>
         <div>
           <p style="margin: 0; font-size: 0.9em; color: #89C4F4;">EVOLUCIÓN QUE NOS PERMITE HACER MÁS</p>
           <p style="margin: 5px 0 0; font-weight: bold;">Talento, cultura corporativa y comunidad</p>
@@ -624,7 +624,7 @@ echo <<<HTML
 
     <li class="contenido-item">
       <div class="contenido-item-izquierda" data-aos="fade-right">
-        <span class="numero-con-estilo" style="color: #FF9800; width: 60px; color: #00AEEF; width: 60px; font-size:2em;">04</span>
+        <span class="numero-con-estilo" style="color: #FF9800; width: 60px;#00AEEF; width: 60px; font-size:2em;">04</span>
         <div>
           <p style="margin: 0; font-size: 0.9em; color: #FFCA80;">EVOLUCIÓN QUE NOS GUÍA CON INTEGRIDAD</p>
           <p style="margin: 5px 0 0; font-weight: bold;">Gobernanza</p>
@@ -840,7 +840,7 @@ echo <<<HTML
 
             <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
                 <div style="width: 45%; margin-bottom: 2em; text-align: left; position: relative;">
-                    <span class="numero-con-estilo" style="font-size: 7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">10</span>
+                    <span class="numero-con-estilo" style="font-size:                 7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">10</span>
                     <span style="font-size: 1em; display: block; color: #1976D2;">Estados de<br>la República</span>
                     <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
                 </div>
@@ -867,7 +867,7 @@ echo <<<HTML
                     <span style="font-size: 0.8em; color: #1976D2;">Inicio del proyecto de<br>transformación digital:<br>Innovación estratégica<br>Sostenible (IES)</span>
                     <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
                 </div>
-            </div>
+            </div>              
         </div>
     </div>
 </div>
