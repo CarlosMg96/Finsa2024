@@ -811,8 +811,6 @@ echo <<<HTML
 </div>
 
 
-
-
 <style type="text/css">
   /* Estilos para PC */
   .cont {
