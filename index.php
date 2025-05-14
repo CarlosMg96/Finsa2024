@@ -78,7 +78,22 @@ echo <<<HTML
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(105deg,#0051ff 0%, #0051ff 50%, #0051ff 100%);
+    background: linear-gradient( #0051ff 100%);
+    background-size: 10% 106%;
+    background-position: right center;
+    animation: animacionLineaReverse 5s linear infinite;
+    z-index: 0;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    transform: skewX(-20deg);
+  }
+  .evolucion-linea-animada2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( #0051ff 100%);
     background-size: 10% 106%;
     background-position: right center;
     mix-blend-mode: difference;
@@ -88,7 +103,6 @@ echo <<<HTML
     background-repeat: no-repeat;
     transform: skewX(-20deg);
   }
-
   @keyframes animacionLineaReverse {
     0% {
       background-position: right center;
@@ -595,6 +609,8 @@ echo <<<HTML
     ESTRATÉGICA
   </div>
         <span class="evolucion-linea-animada"></span>
+                <span class="evolucion-linea-animada2"></span>
+
 
 </div>
 
