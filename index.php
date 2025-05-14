@@ -635,33 +635,33 @@ echo <<<HTML
 </div>
 
 <div class="carta-presidente">
-  <div class="carta-presidente-container">
-    <div class="carta-presidente-texto">
-      <div class="carta-presidente-texto-contenido" data-aos="fade-right">
-        <h3>Carta del presidente y</h3>
-        <h2>DIRECTOR GENERAL</h2>
-        <b>
-          Estamos convencidos de la importancia de integrar
-          los principios ASG (Ambientales, Sociales y de
-          Gobernanza) en todas nuestras operaciones.
-        </b>
-        <p>
-          Por ello, seguimos fortaleciendo los pilares de nuestro modelo de
-          sostenibilidad empresarial: Talento y Cultura Corporativa, Medio
-          Ambiente, Ética y Legalidad, y Comunidad. Nuestra visión se enfoca en
-          la gestión de riesgos, la innovación, el compromiso con la cadena de
-          valor, la responsabilidad y resiliencia, así como el sentido sostenible
-          del negocio.
-        </p>
-        <a href="carta-del-presidente">
-          Seguir leyendo
-        </a>
-      </div>
+    <div class="carta-presidente-container">
+        <div class="carta-presidente-texto">
+            <div class="carta-presidente-texto-contenido" data-aos="fade-right">
+                <h3 >Carta del presidente y</h3>
+                <h2 >DIRECTOR GENERAL</h2>
+                <b >
+                    Estamos convencidos de la importancia de integrar
+                    los principios ASG (Ambientales, Sociales y de
+                    Gobernanza) en todas nuestras operaciones.
+                </b>
+                <p>
+                    Por ello, seguimos fortaleciendo los pilares de nuestro modelo de
+                    sostenibilidad empresarial: Talento y Cultura Corporativa, Medio
+                    Ambiente, Ética y Legalidad, y Comunidad. Nuestra visión se enfoca en
+                    la gestión de riesgos, la innovación, el compromiso con la cadena de
+                    valor, la responsabilidad y resiliencia, así como el sentido sostenible
+                    del negocio.
+                </p>
+                <a href="carta-del-presidente" >
+                  Seguir leyendo
+                </a>
+            </div>
+        </div>
+        <div class="carta-presidente-imagen">
+            <img src="im/2024/casa_aguascalientes.png" data-aos="fade-down">
+        </div>
     </div>
-    <div class="carta-presidente-imagen">
-      <img src="im/2024/Carta1_EDGE-Oficinas-FINSA-Aguascalientes.png" data-aos="fade-down">
-    </div>
-  </div>
 </div>
 
 <div class="contenido-seccion">
