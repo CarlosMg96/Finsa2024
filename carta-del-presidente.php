@@ -260,18 +260,31 @@ echo <<<HTML
   padding: 20px;
 }
 
+.main-content{
+  background: #F2F4F6;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 20px;
+  witdh: 100%;
+  margin-right: -120px;
+  margin-top: 20px;
+  height: 300px;
+}
+
 @media screen and (max-width: 768px) {
   .data-asg {
     margin-left: 0;
     margin-right: 0;
     text-align: center;
   }
-}
 
-.main-content{
-  background: #F2F4F6;
-  padding: 20px;
-  witdh: 100%;
+  .main-content{
+    background: #F2F4F6;
+    padding: 20px;
+    width: 100%;
+    margin-right: 0;
+    height: auto;
+  }
 }
 
 </style>
@@ -282,15 +295,15 @@ echo <<<HTML
   <div style="display: flex; width: 100vw; min-height: 780px; font-family: 'Helvetica Neue', sans-serif;">
     
     <!-- Columna de texto -->
-    <div style="width: 800px; display: flex; align-items: center; transform: skewX(-6deg);">
-      <div style="width: 80%; margin: auto;">
-        <div class="carta-presidente-texto-contenido" data-aos="fade-right">
+    <div style="width: 650px; display: flex; align-items: center;">
+      <div>
+        <div style="width: 80%; margin: auto;" class="carta-presidente-texto-contenido" data-aos="fade-right">
           <h3 style="color: #1A2B49; font-size: 1.4em; margin-bottom: 5px; font-weight: 500;">Carta del presidente y</h3>
           <h2 style="color: #1976D2; font-weight: 800; font-size: 2.6em; margin: 0;">DIRECTOR GENERAL</h2>
         </div>
 
         <div class="main-content" data-aos="fade-right">
-          <p style="color: #1A2B49; font-size: 1.15em; line-height: 1.6; margin-top: 20px;">
+          <p style="color: #1A2B49; font-size: 1.4em; line-height: 1.6; margin-top: 20px; font-weight: 500;">
             El sector inmobiliario industrial actual se distingue por un dinamismo en constante evolución, donde las demandas del mercado se transforman en valiosas oportunidades.
           </p>
            <!-- Botón de descarga -->
@@ -313,12 +326,12 @@ echo <<<HTML
       </div>
     </div>
 
-     <div class="blue-line"></div>
-
     <div style="
-      width: 900px;
-background-color: #877E6D;
-      clip-path: polygon(35% 0%, 100% 0, 100% 100%, 25% 100%);
+      width: 1000px;
+      background: url('im/2024/carta-director.png') no-repeat;
+      background-size: cover;
+      background-position: 80px 0;
+      clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0 100%);
       min-height: 480px;">
     </div>
   </div>

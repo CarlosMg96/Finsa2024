@@ -180,8 +180,8 @@ echo <<<HTML
 
   .evolucion-estrategica-imagen {
       width: 50vw;
-      background: url('im/2024/DJI_0457-HDR-PANO.png') center center/cover no-repeat;
-      clip-path: polygon(0 0, 90% 0, 75% 100%, 0% 100%);
+      background: url('im/2024/estrategia.png') center center/cover no-repeat;
+      clip-path: polygon(0 0, 90% 0, 75% 140%, 0% 100%);
       min-height: 600px;
       max-width: 550px;
   }
@@ -440,8 +440,8 @@ echo <<<HTML
 
       .evolucion-estrategica-imagen {
           width: 100%;
-          max-width: 500px; /* Limita el ancho máximo de la imagen */
-          min-height: 200px; /* Reduce la altura */
+          max-width: 500px; 
+          min-height: 200px; 
           clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
       }
 
