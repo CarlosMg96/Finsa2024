@@ -5,7 +5,6 @@ require_once "header.php";
 
 echo <<<HTML
 <style type="text/css">
-  /* Estilos Base (PC y Mobile) */
   .portadafoto {
     width: 100%;
     position: relative;
@@ -476,27 +475,23 @@ echo <<<HTML
       flex-direction: column;
       align-items: center;
       min-height: auto;
-      /* Para permitir que se ajuste al contenido */
     }
 
     .evolucion-estrategica-imagen {
       width: 100%;
-      max-width: 500px;
-      min-height: 200px;
-      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+      min-height: 250px;
+      background: url('im/2024/DJI_0457-HDR-Pano.png') center center/cover no-repeat;
+      clip-path: polygon(0 0, 200% 0, 75% 140%, 0% 100%);
     }
 
     .evolucion-estrategica-texto {
       width: 100%;
       max-width: 500px;
-      /* Limita el ancho máximo del texto */
     }
 
     .evolucion-estrategica-texto-contenido {
       width: 90%;
-      /* Ajusta el ancho del contenido para mayor comodidad */
       margin: 20px auto;
-      /* Centra y añade espacio vertical */
     }
   }
 

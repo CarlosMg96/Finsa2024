@@ -267,7 +267,7 @@ echo <<<HTML
       background: url('im/2024/carta-director.png') no-repeat;
       background-size: cover;
       background-position: 80px 0;
-      clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(18% 0%, 100% 0, 100% 100%, 0 100%);
       min-height: 480px;
 }
 
@@ -282,6 +282,20 @@ echo <<<HTML
   margin-right: -120px;
   margin-top: 20px;
   height: 500px;
+}
+
+@media screen and (min-width: 1000px and max-width: 1200px) {
+  .main-content{
+    top: -20px;
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .main-content{
+    top: 35px;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {

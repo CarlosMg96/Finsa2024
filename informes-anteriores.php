@@ -119,6 +119,7 @@ echo <<<HTML
                 <a id="link-2023" class="download-link" href="pdf/IAS_Finsa_2023_programado.pdf">
                     <img src="im/descargas-foto.jpg" class="image-download">
                 </a>
+                <img src="im/arr-dwn.svg" alt="" height="50px" width="50px" style="margin: 0 auto; display: block;">
                 <a id="link-2022" class="download-link" href="pdf/IAS_Finsa_2022_programado.pdf">
                     <img src="im/2024/Portada-IS-Finsa-2024.png" class="image-download">
                 </a>
