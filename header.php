@@ -276,11 +276,17 @@ echo <<<HTML
 
 <style type="text/css">
 
-.outer{
-  margin-top:55px;
-  position:fixed;  
-  z-index:20;
-  width:100%;
+.outer {
+  margin-top: 55px;
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .outer {
+    display: none;
+  }
 }
 
 .tab {

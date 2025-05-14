@@ -4,26 +4,26 @@ $uri = $_SERVER['REQUEST_URI'];
 
 //$uri = str_replace("en_/","en_",$uri);
 //$uri = str_replace("en/","en",$uri);
-$uri = str_replace("/","",$uri);
-$uri = str_replace("finsa2023","",$uri);
+$uri = str_replace("/", "", $uri);
+$uri = str_replace("finsa2023", "", $uri);
 
-$uri0='';
+$uri0 = '';
 
-if ( strpos($uri, '?')){
-  list($uri0,$uri1) = explode('?',$uri);
-//  $uri=$uri0;
+if (strpos($uri, '?')) {
+  list($uri0, $uri1) = explode('?', $uri);
+  //  $uri=$uri0;
 }
 
 
 
 $descargar = "";
-if(empty($ocultar)){
+if (empty($ocultar)) {
   $descargar = "<a href='pdf/IAS_Finsa_2023_programado.pdf'><img src='im/descargar.svg' style='cursor:pointer; width:250px; position:fixed;right:1em; bottom:1em; filter: drop-shadow(0 0px 3px rgba(0,0,0,0.3));''></a>";
 }
 
-if (!empty($next1)){
+if (!empty($next1)) {
 
-echo<<<HTML
+  echo <<<HTML
 
 <div id="descargas" style="display:inline-block; width:100%; font-size:0.7em; padding:0.6em 0.8em 0.3em 0.8em;background-color: #172b54;color:white;">
   <a href="$prev1">
@@ -40,7 +40,7 @@ echo<<<HTML
   .w48 { width:48% }
   .descarga-el-informe{ width:240px; margin-top:0.8vw }
   .descargas {font-size:1.1vw}
-  .df1 { width:85%; margin:5px 0px 0px 15%; }
+  .df1 { width:85%; margin:5px 0px 0px 10%; }
 
   
 
@@ -63,16 +63,13 @@ echo<<<HTML
             
             <div class="w50 flex1">
               <div class="w50 descargas" >
-                <a href='pdf/IAS_Finsa_2023_programado.pdf'>
-                    <button style="background-color:#fff; border:1px solid #ccc; padding:10px 20px; border-radius:25px; cursor:pointer;">Descargar el informe completo</button>
-                </a>
-                <p>
+
                   
                   
                   
                 </p>
                 <div style="margin-top: 20px;">
-                  <ol style="list-style: none; padding-left: 0;">
+                  <ol style="list-style: none; padding-left: 0;" data-aos="fade-down">
                      <li>
                       <a target="_new" href="pdf/IAS_Finsa_2023_Presidente.pdf" style="display:block; padding: 10px; text-decoration: none; color:#4C5C6E;  display: flex; justify-content: space-between; align-items: center;">
                        
@@ -83,23 +80,23 @@ echo<<<HTML
                     </li>
                     <li>
                       <a target="_new" href="pdf/IAS_Finsa_2023_Capitulo-1.pdf" style="display:block; padding: 10px; text-decoration: none; color:#4C5C6E;  display: flex; justify-content: space-between; align-items: center;">
-                         <span style="color:#00adef; font-weight:700; margin-right:5px;">01</span> Sobre Finsa  <img src="im/arr-dwn.svg" style="width:1.2vw; vertical-align:middle;">
+                         <span style="font: 800 2em Arial; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px; margin-right:5px;">01</span> Sobre Finsa  <img src="im/arr-dwn.svg" style="width:1.2vw; vertical-align:middle;">
                       </a>
                     </li>
                     <li>
-                      <a target="_new" href="pdf/IAS_Finsa_2023_Capitulo-2.pdf" style="display:block; padding: 10px; text-decoration: none; color:#4C5C6E; display: flex; justify-content: space-between; align-items: center;">
-                         <span style="color:#00E6B8; font-weight:700; margin-right:5px;">02</span> Medio Ambiente <img src="im/arr-dwn.svg" style="width:1.2vw; vertical-align:middle;">
-                      </a>
+                        <a target="_new" href="pdf/IAS_Finsa_2023_Capitulo-2.pdf" style="display:block; padding: 10px; text-decoration: none; color:green; display: flex; justify-content: space-between; align-items: center; ">
+                         <span style="font: 800 2em Arial; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px; margin-right:5px;">02</span> Medio Ambiente <img src="im/arr-dwn.svg" style="width:1.2vw; vertical-align:middle;">
+                        </a>
                     </li>
                     <li>
-                      <a target="_new" href="pdf/IAS_Finsa_2023_Capitulo-3.pdf" style="display:block; padding: 10px; text-decoration: none; color:#4C5C6E; display: flex; justify-content: space-between; align-items: center;">
-                         <span style="color:#1976D2; font-weight:700; margin-right:5px;">03</span> Talento, cultura corporativa y comunidad <img src="im/arr-dwn.svg" style="width:1.2vw; vertical-align:middle;">
-                      </a>
+                        <a target="_new" href="pdf/IAS_Finsa_2023_Capitulo-3.pdf" style="display:block; padding: 10px; text-decoration: none; color:#009add; display: flex; justify-content: space-between; align-items: center;">
+                         <span style="font: 800 2em Arial; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px; margin-right:5px;">03</span> Talento, cultura corporativa y comunidad <img src="im/arr-dwn.svg" style="width:1.2vw; vertical-align:middle;">
+                        </a>
                     </li>
                     <li>
-                      <a target="_new" href="pdf/IAS_Finsa_2023_Capitulo-4.pdf" style="display:block; padding: 10px; text-decoration: none; color:#4C5C6E; display: flex; justify-content: space-between; align-items: center;">
-                         <span style="color:#FF9800; font-weight:700; margin-right:5px;">04</span> Gobernanza <img src="im/arr-dwn.svg" style="width:1.2vw; vertical-align:middle;">
-                      </a>
+                        <a target="_new" href="pdf/IAS_Finsa_2023_Capitulo-4.pdf" style="display:block; padding: 10px; text-decoration: none; color:orange; display: flex; justify-content: space-between; align-items: center;">
+                         <span style="font: 800 2em Arial; -webkit-text-fill-color: transparent; -webkit-text-stroke: 1px; margin-right:5px;;">04</span> Gobernanza <img src="im/arr-dwn.svg" style="width:1.2vw; vertical-align:middle;">
+                        </a>
                     </li>
                      <li>
                       <a target="_new" href="pdf/IAS_Finsa_2023_AcercaDe.pdf" style="display:block; padding: 10px; text-decoration: none; color:#4C5C6E; display: flex; justify-content: space-between; align-items: center;">
@@ -120,21 +117,24 @@ echo<<<HTML
                 
               </div>
             </div>
-             <div class="w50 flex5">
+             <div class="w50 flex5" style="align-items: center;">
               <img src="im/descargas-foto.jpg" style="width:85%; margin:auto; position:relative;
               box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.35);" data-aos="fade-down">
+                              <a href='pdf/IAS_Finsa_2023_programado.pdf'>
+                    <button style="background-color:#fff; border:1px solid #ccc; padding:10px 20px; border-radius:25px; cursor:pointer;">Descargar el informe completo</button>
+                </a>
+                <p>
             </div>
+            
           </div>
         
     
 </div>
 
 HTML;
-
-
 }
 
-echo<<<HTML
+echo <<<HTML
 
 <style type="text/css">
   
@@ -319,4 +319,3 @@ $(window).scroll(function (event) {
 </body>
 </html>
 HTML;
-?>

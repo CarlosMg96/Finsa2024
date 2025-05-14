@@ -86,6 +86,22 @@ echo <<<HTML
     font-size: 8vw;
   }
 
+  /* NUEVOS ESTILOS PARA LA LINEA */
+  .portada-linea {
+    width: 78.5%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    top: 20.8vw; /* Valor por defecto para PC */
+  }
+
+  /* NUEVA CLASE PARA LOS NUMEROS CON ESTILO */
+  .numero-con-estilo {
+    font: 800 80px Arial;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+  }
 
   /* Estilos Mobile - Sobreescriben SOLO lo necesario */
   @media (max-width: 700px) {
@@ -133,6 +149,11 @@ echo <<<HTML
       left: 0;
       top: 25vw;
       font-size: 10vw;
+    }
+
+    /* Ajuste de la línea en mobile */
+    .portada-linea {
+      top: 40.8vw; /* Valor para mobile */
     }
   }
 
@@ -458,7 +479,8 @@ echo <<<HTML
   <img src="im/00/portada-curve.png" class="portadacurve" data-aos="fade-left" />
   <img src="im/00/portada-people.png" class="portadapeople" data-aos="fade-right" />
   <img src="im/00/portada-informe.png" class="portadainforme" />
-  <div style="width:78.5%; height:1px; background-color:white; position: absolute; right:0px; top:20.8vw;"></div>
+  <!-- LINEA HORIZONTAL AQUI -->
+  <div class="portada-linea"></div>
 
   <div class="portadafoto-texto-principal portadafoto-texto-principal-siguiendo" data-aos="fade-down">
     Siguiendo
@@ -475,32 +497,32 @@ echo <<<HTML
   .diagtxt { padding-left:14px; width:80%; padding-left:14px;}
 </style>
 
-<div class="evolucion-estrategica" data-aos="fade-right">
-    <div class="evolucion-estrategica-container">
-        <div class="evolucion-estrategica-imagen"></div>
-        <div class="evolucion-estrategica-texto">
-            <div class="evolucion-estrategica-texto-contenido">
-                <h2 style="color:#1976D2; font-weight:700;">EVOLUCIÓN ESTRATÉGICA</h2>
-                <p>
-                    2024 fue un año que reafirmó nuestra capacidad para convertir
-                    desafíos en oportunidades, impulsando una evolución estratégica que
-                    nos fortalece y nos prepara para un futuro prometedor.
-                </p>
-                <p>
-                    Gracias al liderazgo, el talento y el compromiso de nuestra gente,
-                    demostramos que en FINSA el éxito va más allá de los resultados, está
-                    en nuestra contribución al desarrollo de México, en la preservación del
-                    planeta y en el bienestar nuestras comunidades
-                </p>
-                <b style="color:#1A2B49;">
-                    Este año de evolución marcó un paso firme hacia el
-                    crecimiento sostenido, guiados con visión,
-                    responsabilidad y determinación.
-                </b>
-                <div style="height:3px; background-color:#1A2B49; margin-top: 20px;"></div>
-            </div>
-        </div>
+<div class="evolucion-estrategica">
+  <div class="evolucion-estrategica-container">
+    <div class="evolucion-estrategica-imagen"></div>
+    <div class="evolucion-estrategica-texto" data-aos="fade-right">
+      <div class="evolucion-estrategica-texto-contenido">
+        <h2 style="color:#1976D2; font-weight:700;">EVOLUCIÓN ESTRATÉGICA</h2>
+        <p>
+          2024 fue un año que reafirmó nuestra capacidad para convertir
+          desafíos en oportunidades, impulsando una evolución estratégica que
+          nos fortalece y nos prepara para un futuro prometedor.
+        </p>
+        <p>
+          Gracias al liderazgo, el talento y el compromiso de nuestra gente,
+          demostramos que en FINSA el éxito va más allá de los resultados, está
+          en nuestra contribución al desarrollo de México, en la preservación del
+          planeta y en el bienestar nuestras comunidades
+        </p>
+        <b style="color:#1A2B49;">
+          Este año de evolución marcó un paso firme hacia el
+          crecimiento sostenido, guiados con visión,
+          responsabilidad y determinación.
+        </b>
+        <div style="height:3px; background-color:#1A2B49; margin-top: 20px;"></div>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="carta-presidente">
@@ -509,12 +531,12 @@ echo <<<HTML
             <div class="carta-presidente-texto-contenido" data-aos="fade-right">
                 <h3 style="color: #1A2B49; font-size: 1.2em; margin-bottom: 5px;">Carta del presidente y</h3>
                 <h2 style="color:#1976D2; font-weight:700; font-size: 2em; margin-top: 0;">DIRECTOR GENERAL</h2>
-                <b style="color:#1A2B49; font-size: 1.1em; line-height: 1.4;">
+                <b style="color:#1A2B49;">
                     Estamos convencidos de la importancia de integrar
                     los principios ASG (Ambientales, Sociales y de
                     Gobernanza) en todas nuestras operaciones.
                 </b>
-                <p style="margin-top: 15px; color: #333; line-height: 1.6; font-size: 1em;">
+                <p>
                     Por ello, seguimos fortaleciendo los pilares de nuestro modelo de
                     sostenibilidad empresarial: Talento y Cultura Corporativa, Medio
                     Ambiente, Ética y Legalidad, y Comunidad. Nuestra visión se enfoca en
@@ -522,7 +544,7 @@ echo <<<HTML
                     valor, la responsabilidad y resiliencia, así como el sentido sostenible
                     del negocio.
                 </p>
-                <a href="carta-del-presidente" style="display: inline-block; margin-top: 20px; color: #1976D2;">
+                <a href="seguir-leyendo">
                     Seguir leyendo
                 </a>
             </div>
@@ -533,95 +555,96 @@ echo <<<HTML
     </div>
 </div>
 
-<div class="contenido-seccion" data-aos="fade-right">
-    <h2 class="contenido-titulo">
-        CONTENIDO
-    </h2>
+<div class="contenido-seccion">
+  <h2 class="contenido-titulo" data-aos="fade-right">
+    CONTENIDO
+  </h2>
 
-    <ul class="contenido-lista">
-        <li class="contenido-item">
-            <div class="contenido-item-izquierda">
-                <img src="URL_DE_LA_IMAGEN_FLECHA" alt="Flecha">
-                <span>Carta del Presidente y Director General</span>
-            </div>
-            <div class="contenido-item-derecha">
-                <a href="#">
-                    <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar">
-                    DESCARGA CARTA
-                </a>
-            </div>
-        </li>
+  <ul class="contenido-lista">
+    <li class="contenido-item">
+      <div class="contenido-item-izquierda" data-aos="fade-right">
+        <img src="URL_DE_LA_IMAGEN_FLECHA" alt="Flecha">
+        <span>Carta del Presidente y Director General</span>
+      </div>
+      <div class="contenido-item-derecha" data-aos="fade-left">
+        <a href="#">
+          <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar">
+          DESCARGA CARTA
+        </a>
+      </div>
+    </li>
 
-        <li class="contenido-item">
-            <div class="contenido-item-izquierda">
-                <span style="font-size: 2.5em; font-weight: bold; color: #00AEEF; width: 60px;">01</span>
-                <div>
-                    <p style="margin: 0; font-size: 0.9em; color: #A0C4FF;">EVOLUCIÓN QUE REAFIRMA NUESTRO LIDERAZGO</p>
-                    <p style="margin: 5px 0 0; font-weight: bold;">Sobre FINSA</p>
-                </div>
-            </div>
-            <div class="contenido-item-derecha">
-                <a href="#">
-                    <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar">
-                    DESCARGA CAPÍTULO
-                </a>
-            </div>
-        </li>
+    <li class="contenido-item">
+      <div class="contenido-item-izquierda" data-aos="fade-right">
+        <span class="numero-con-estilo" style="color: #00AEEF; width: 60px; color: #00AEEF; width: 60px; font-size:2em;">01</span>
+        <div>
+          <p style="margin: 0; font-size: 0.9em; color: #A0C4FF;">EVOLUCIÓN QUE REAFIRMA NUESTRO LIDERAZGO</p>
+          <p style="margin: 5px 0 0; font-weight: bold;">Sobre FINSA</p>
+        </div>
+      </div>
+      <div class="contenido-item-derecha" data-aos="fade-left">
+        <a href="#">
+          <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar">
+          DESCARGA CAPÍTULO
+        </a>
+      </div>
+    </li>
 
-        <li class="contenido-item">
-            <div class="contenido-item-izquierda">
-                <span style="font-size: 2.5em; font-weight: bold; color: #00E6B8; width: 60px;">02</span>
-                <div>
-                    <p style="margin: 0; font-size: 0.9em; color: #7CF2D0;">EVOLUCIÓN QUE SUMA A LA SOSTENIBILIDAD</p>
-                    <p style="margin: 5px 0 0; font-weight: bold;">Medio ambiente</p>
-                </div>
-            </div>
-            <div class="contenido-item-derecha">
-                <a href="#">
-                    <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar">
-                    DESCARGA CAPÍTULO
-                </a>
-            </div>
-        </li>
+    <li class="contenido-item">
+      <div class="contenido-item-izquierda" data-aos="fade-right">
+        <span class="numero-con-estilo" style="color: #00E6B8; width: 60px; color: #00AEEF; width: 60px; font-size:2em;">02</span>
+        <div>
+          <p style="margin: 0; font-size: 0.9em; color: #7CF2D0;">EVOLUCIÓN QUE SUMA A LA SOSTENIBILIDAD</p>
+          <p style="margin: 5px 0 0; font-weight: bold;">Medio ambiente</p>
+        </div>
+      </div>
+      <div class="contenido-item-derecha" data-aos="fade-left">
+        <a href="#">
+          <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar">
+          DESCARGA CAPÍTULO
+        </a>
+      </div>
+    </li>
 
-        <li class="contenido-item">
-            <div class="contenido-item-izquierda">
-                <span style="font-size: 2.5em; font-weight: bold; color: #1976D2; width: 60px;">03</span>
-                <div>
-                    <p style="margin: 0; font-size: 0.9em; color: #89C4F4;">EVOLUCIÓN QUE NOS PERMITE HACER MÁS</p>
-                    <p style="margin: 5px 0 0; font-weight: bold;">Talento, cultura corporativa y comunidad</p>
-                </div>
-            </div>
-            <div class="contenido-item-derecha">
-                <a href="#">
-                    <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar">
-                    DESCARGA CAPÍTULO
-                </a>
-            </div>
-        </li>
+    <li class="contenido-item">
+      <div class="contenido-item-izquierda" data-aos="fade-right">
+        <span class="numero-con-estilo" style="color: #1976D2; width: 60px; color: #00AEEF; width: 60px; font-size:2em;">03</span>
+        <div>
+          <p style="margin: 0; font-size: 0.9em; color: #89C4F4;">EVOLUCIÓN QUE NOS PERMITE HACER MÁS</p>
+          <p style="margin: 5px 0 0; font-weight: bold;">Talento, cultura corporativa y comunidad</p>
+        </div>
+      </div>
+      <div class="contenido-item-derecha" data-aos="fade-left">
+        <a href="#">
+          <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar">
+          DESCARGA CAPÍTULO
+        </a>
+      </div>
+    </li>
 
-        <li class="contenido-item">
-            <div class="contenido-item-izquierda">
-                <span style="font-size: 2.5em; font-weight: bold; color: #FF9800; width: 60px;">04</span>
-                <div>
-                    <p style="margin: 0; font-size: 0.9em; color: #FFCA80;">EVOLUCIÓN QUE NOS GUÍA CON INTEGRIDAD</p>
-                    <p style="margin: 5px 0 0; font-weight: bold;">Gobernanza</p>
-                </div>
-            </div>
-            <div class="contenido-item-derecha">
-                <a href="#">
-                    <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar">
-                    DESCARGA CAPÍTULO
-                </a>
-            </div>
-        </li>
-    </ul>
+    <li class="contenido-item">
+      <div class="contenido-item-izquierda" data-aos="fade-right">
+        <span class="numero-con-estilo" style="color: #FF9800; width: 60px; color: #00AEEF; width: 60px; font-size:2em;">04</span>
+        <div>
+          <p style="margin: 0; font-size: 0.9em; color: #FFCA80;">EVOLUCIÓN QUE NOS GUÍA CON INTEGRIDAD</p>
+          <p style="margin: 5px 0 0; font-weight: bold;">Gobernanza</p>
+        </div>
+      </div>
+      <div class="contenido-item-derecha" data-aos="fade-left">
+        <a href="#">
+          <img src="URL_DE_LA_IMAGEN_DESCARGA" alt="Descargar">
+          DESCARGA CAPÍTULO
+        </a>
+      </div>
+    </li>
+  </ul>
 </div>
 
 <style type="text/css">
   /* Estilos para la sección de números (PC) */
   .numbers1 {
     width: 24%;
+    display: block; /* Asegura que los elementos sean bloques */
   }
 
   .numT {
@@ -640,6 +663,9 @@ echo <<<HTML
 
   #mainnumbers {
     min-height: 50vw;
+    display: flex;        /* Usa flexbox */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: center;/* Centra verticalmente */
   }
 
   .fen {
@@ -650,6 +676,8 @@ echo <<<HTML
   @media (max-width: 700px) {
     .numbers1 {
       width: 49%;
+      display: inline-block;/* Para que estén en la misma línea */
+      vertical-align: top;  /* Alinea en la parte superior */
     }
 
     #mainnumbers {
@@ -812,32 +840,32 @@ echo <<<HTML
 
             <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
                 <div style="width: 45%; margin-bottom: 2em; text-align: left; position: relative;">
-                    <span style="font-size: 7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">10</span>
+                    <span class="numero-con-estilo" style="font-size: 7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">10</span>
                     <span style="font-size: 1em; display: block; color: #1976D2;">Estados de<br>la República</span>
-                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2;"></div>
+                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
                 </div>
 
                 <div style="width: 45%; margin-bottom: 2em; text-align: left; position: relative;">
-                    <span style="font-size: 7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">4</span>
+                    <span class="numero-con-estilo" style="font-size: 7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">4</span>
                     <span style="font-size: 1em; display: block; color: #1976D2;">Parques Proveedores<br>de la industria<br>automotriz</span>
-                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2;"></div>
+                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
                 </div>
             </div>
 
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; position: relative;">
+            <div style="display: flex;flex-wrap: wrap;justify-content: space-between;position: relative;align-items: flex-end;">
                 <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;">
                     <span style="font-size: 0.8em; color: #1976D2;">Cierre de la segunda<br>etapa del fondo de<br>inversión FINSA V</span>
-                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2;"></div>
+                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
                 </div>
 
                 <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;">
                     <span style="font-size: 0.8em; color: #1976D2;">Formamos parte por<br>segundo año de las<br>500 empresas más importantes<br>de México, de la revista expansión</span>
-                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2;"></div>
+                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
                 </div>
 
                 <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;">
                     <span style="font-size: 0.8em; color: #1976D2;">Inicio del proyecto de<br>transformación digital:<br>Innovación estratégica<br>Sostenible (IES)</span>
-                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2;"></div>
+                    <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
                 </div>
             </div>
         </div>
@@ -851,4 +879,3 @@ $prev1 = "gobernanza";
 $next1 = "nuestra-empresa";
 
 require_once "footer.php";
-?>
