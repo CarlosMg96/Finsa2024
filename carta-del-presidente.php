@@ -37,6 +37,7 @@ echo <<<HTML
   .carta-presidente-texto-contenido {
     width: 80%;
     margin: auto;
+    margin-top: 200px !important;
   }
 
   /* Botón descargar carta */
@@ -108,6 +109,10 @@ echo <<<HTML
     display: block;
     box-sizing: border-box;
   }
+
+  .carta-presidente-texto-contenido {
+    margin-top: 0px !important;
+  }
 }
 
 
@@ -126,17 +131,14 @@ echo <<<HTML
     gap: 20px;
 }
 
-/* Imagen más grande (60%) */
 .second-container-image {
     width: 50%;
 }
 
-/* Texto (40%) */
 .second-container .flex-col:not(.second-container-image) {
     width: 40%;
 }
 
-/* Imagen responsiva */
 .second-container-image img {
     width: 100%;
     height: auto;
@@ -144,7 +146,6 @@ echo <<<HTML
     border-radius: 8px;
 }
 
-/* Texto */
 .second-container p {
     font-size: 1em;
     line-height: 1.6;
@@ -261,15 +262,26 @@ echo <<<HTML
   padding: 20px;
 }
 
+.main-image {
+    width: 1000px;
+      background: url('im/2024/carta-director.png') no-repeat;
+      background-size: cover;
+      background-position: 80px 0;
+      clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0 100%);
+      min-height: 480px;
+}
+
 .main-content{
-  background: #F2F4F6;
+  position: relative;
+  top: 10px;
+  background: #F7F7F7;
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 20px;
   width: 120%;
   margin-right: -120px;
   margin-top: 20px;
-  height: 300px;
+  height: 500px;
 }
 
 @media screen and (max-width: 768px) {
@@ -285,6 +297,14 @@ echo <<<HTML
     width: 100%;
     margin-right: 0;
     height: auto;
+    top: 0;
+  }
+  .main-image {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    clip-path: none;
   }
 }
 
@@ -333,13 +353,7 @@ echo <<<HTML
       </div>
     </div>
 
-    <div style="
-      width: 1000px;
-      background: url('im/2024/carta-director.png') no-repeat;
-      background-size: cover;
-      background-position: 80px 0;
-      clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0 100%);
-      min-height: 480px;">
+    <div class="main-image">
     </div>
   </div>
 </section>
