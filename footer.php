@@ -118,7 +118,7 @@ if (!empty($next1)) {
               </div>
             </div>
              <div class="w50 flex5" style="align-items: center;">
-              <img src="im/2024/Portada-IS-Finsa-2024.png" style="width:85%; margin:auto; position:relative;
+              <img src="im/2024/Portada-IS-Finsa-2023.jpg" style="width:85%; margin:auto; position:relative;
               box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.35);" data-aos="fade-down">
                               <a href='pdf/IAS_Finsa_2023_programado.pdf'>
                     <button style="background-color:#fff; border:1px solid #ccc; padding:10px 20px; border-radius:25px; cursor:pointer;">Descargar el informe completo</button>
