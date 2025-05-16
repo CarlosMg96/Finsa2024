@@ -608,8 +608,8 @@ echo <<<HTML
   <div class=" evolucion-texto portadafoto-texto-principal portadafoto-texto-principal-sostenibilidad" data-aos="fade-up">
     ESTRATÉGICA
   </div>
-        <!-- <span class="evolucion-linea-animada"></span>
-                <span class="evolucion-linea-animada2"></span> -->
+        <span class="evolucion-linea-animada"></span>
+                <span class="evolucion-linea-animada2"></span>
 
 
 </div>
