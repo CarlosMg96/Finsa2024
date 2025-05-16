@@ -397,7 +397,7 @@ echo <<<HTML
   /* Estilos para la sección "FINSA EN NÚMEROS" */
   #mainnumbers {
     width: 100vw;
-    background-image: url(im/00/fondo-numbers.jpg);
+    background-image: url(im/00/fondo-numbers2.jpg);
     background-size: cover;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -851,7 +851,7 @@ echo <<<HTML
 </style>
 
 <div id="mainnumbers"
-  style="width:100vw; background-image: url(im/00/fondo-numbers.jpg); background-size: cover;border-top:1px solid white;border-bottom:1px solid white;">
+  style="width:100vw; background-image: url(im/00/fondo-numbers2.jpg); background-size: cover;border-top:1px solid white;border-bottom:1px solid white;">
 
   <div style="width:80%; margin:5vw auto;">
     <img src="im/00/finsa-en-numeros.svg" class="fen" data-aos="fade-down" />
