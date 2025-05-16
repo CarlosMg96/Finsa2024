@@ -58,6 +58,14 @@ echo <<<HTML
     top: 4.3vw;
     font-size: 7vw;
   }
+  @media (max-width: 700px) {
+    .evolucion-estrategica-imagen {
+        width: 100%;
+        min-height: 250px;
+        background: url(im/2024/DJI_0457-HDR-Pano.png) center center / cover no-repeat;
+        clip-path: polygon(0 0, 200% 0, 75% 140%, 0% 100%);
+    }
+}
 
   /* Estilos para la animación del texto */
   .evolucion-texto-wrapper {
