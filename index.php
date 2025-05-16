@@ -986,35 +986,35 @@ echo <<<HTML
     <div class="highlights-imagen"></div>
     <div class="highlights-texto" data-aos="fade-right">
       <h2 style="font-size: 3em; font-weight: bold; margin-bottom: 0.5em; color: #000;" data-aos="fade-right">HIGHLIGHTS</h2>
-      <p style="font-size: 1.2em; margin-bottom: 2em;" data-aos="fade-right">2024</p>
+      <p style="font-size: 1.2em; margin-bottom: 2em; font-family:fantasy" data-aos="fade-right">2024</p>
 
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
 <div style="width: 45%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
           <span class="numero-con-estilo" style="font-size:7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">10</span>
-          <span style="font-size: 1em; display: block; color: #1976D2;">Estados de<br>la República</span>
+          <span style="font-size: 1em; display: block; color: #1976D2;  font-family:fantasy">Estados de<br>la República</span>
           <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
         </div>
 
         <div style="width: 45%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
           <span class="numero-con-estilo" style="font-size: 7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">4</span>
-          <span style="font-size: 1em; display: block; color: #1976D2;">Parques Proveedores<br>de la industria<br>automotriz</span>
+          <span style="font-size: 1em; display: block; color: #1976D2;  font-family:fantasy">Parques Proveedores<br>de la industria<br>automotriz</span>
           <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
         </div>
       </div>
 
       <div style="display: flex;flex-wrap: wrap;justify-content: space-between;position: relative;align-items: flex-end;">
         <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
-          <span style="font-size: 0.8em; color: #1976D2;">Cierre de la segunda<br>etapa del fondo de<br>inversión FINSA V</span>
+          <span style="font-size: 0.8em; color: #1976D2;  font-family:fantasy">Cierre de la segunda<br>etapa del fondo de<br>inversión FINSA V</span>
           <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
         </div>
 
         <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
-          <span style="font-size: 0.8em; color: #1976D2;">Formamos parte por<br>segundo año de las<br>500 empresas más importantes<br>de México, de la revista expansión</span>
+          <span style="font-size: 0.8em; color: #1976D2;  font-family:fantasy">Formamos parte por<br>segundo año de las<br>500 empresas más importantes<br>de México, de la revista expansión</span>
           <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
         </div>
 
         <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
-          <span style="font-size: 0.8em; color: #1976D2;">Iniciamos el proyecto de<br>transformación digital:<br>Innovación estratégica<br>Sostenible (IES)</span>
+          <span style="font-size: 0.8em; color: #1976D2;  font-family:fantasy">Iniciamos el proyecto de<br>transformación digital:<br>Innovación estratégica<br>Sostenible (IES)</span>
           <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
         </div>
       </div>
