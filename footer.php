@@ -48,7 +48,6 @@ if (!empty($next1)) {
     .halfcircle {display:none;}
   }
 </style>
-
 <div style="positon:relative;width:100vw;  border-top:1px solid #fff; border-bottom:1px solid #fff; background-color:#F2F4F6;"  >
   
         <div style="width:80%; margin:80px auto 0px auto;" >
@@ -137,23 +136,14 @@ if (!empty($next1)) {
        
               </div>
             </div>
-<div class="w50 flex5" style="display: flex;flex-direction: row-reverse;justify-content: space-evenly;align-items: center;flex-wrap: wrap;align-content: flex-start;">
-  <div style="display: flex; justify-content: center; width: 100%; margin-bottom: 20px;">
-    <a href='pdf/IAS_Finsa_2023_programado.pdf' download style="margin-right: 20px; text-decoration: none; color: #011f4d; transition: color 0.3s ease;">
-      <span style="font-size: 2.2em; font-weight: 600; letter-spacing: -0.05em; display: inline-block; position: relative; padding-bottom: 5px;" data-aos="fade-down">
-        2023
-        <span style="position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background-color: #007bff; transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease;"></span>
-      </span>
-    </a>
-    <a href='pdf/IAS_Finsa_2023_programado.pdf' download style="text-decoration: none; color: #011f4d; transition: color 0.3s ease;">
-      <span style="font-size: 2.2em; font-weight: 600; letter-spacing: -0.05em; display: inline-block; position: relative; padding-bottom: 5px;" data-aos="fade-down">
-        2022
-        <span style="position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background-color: #007bff; transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease;"></span>
-      </span>
-    </a>
-  </div>
-  <img src="im/2024/Portada-IS-Finsa-2024.png" style="width:85%; margin:auto; position:relative; box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.35);" data-aos="fade-down">
-</div>
+             <div class="w50 flex5" style="align-items: center;">
+              <img src="im/2024/Portada-IS-Finsa-2024.png" style="width:85%; margin:auto; position:relative;
+              box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.35);" data-aos="fade-down">
+                              <a href='pdf/IAS_Finsa_2023_programado.pdf'>
+                    <button style="background-color:#fff; border:1px solid #ccc; padding:10px 20px; border-radius:25px; cursor:pointer;">Descargar el informe completo</button>
+                </a>
+                <p>
+            </div>
             
           </div>
         
