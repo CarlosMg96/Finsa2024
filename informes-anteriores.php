@@ -72,9 +72,20 @@ echo <<<HTML
         text-align: center;
     }
 
+.download-link.active {
+    display: block;
+    display: flex
+;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
     .download-link.active {
         display: block;
     }
+}
 
     .image-download {
         width: 650px;
@@ -157,8 +168,7 @@ echo <<<HTML
                             Download Report
                         </a>
                         <a href="#">
-                            <img src="im/link.png
-                            " alt="Micrositio">
+                            <img src="im/link.png" alt="Micrositio">
                             Ir a Micrositio
                         </a>
                     </div>
