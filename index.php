@@ -90,7 +90,7 @@ echo <<<HTML
     background: linear-gradient(rgb(156 187 255 / 56%) 100%);
     background-size: 10% 106%;
     background-position: 70%; /* lado izquierdo */
-    animation: animacionLineaReverse 5s linear forwards;
+    animation: animacionLineaReverse 2.5s linear forwards;
     z-index: 3;
     background-repeat: no-repeat;
     transform:skewX(353deg);
