@@ -10,17 +10,17 @@ $uri = str_replace('finsa2023', '', $uri);
 $uri0 = '';
 
 if (strpos($uri, '?')) {
-    list($uri0, $uri1) = explode('?', $uri);
-    //  $uri=$uri0;
+  list($uri0, $uri1) = explode('?', $uri);
+  //  $uri=$uri0;
 }
 
 $descargar = '';
 if (empty($ocultar)) {
-    $descargar = "<a href='pdf/IAS_Finsa_2023_programado.pdf'><img src='im/descargar.svg' style='cursor:pointer; width:250px; position:fixed;right:1em; bottom:1em; filter: drop-shadow(0 0px 3px rgba(0,0,0,0.3));''></a>";
+  $descargar = "<a href='pdf/IAS_Finsa_2023_programado.pdf'><img src='im/descargar.svg' style='cursor:pointer; width:250px; position:fixed;right:1em; bottom:em; filter: drop-shadow(0 0px 3px rgba(0,0,0,0.3));''></a>";
 }
 
 if (!empty($next1)) {
-    echo <<<HTML
+  echo <<<HTML
 
 <!-- <div id="descargas" style="display:inline-block; width:100%; font-size:0.7em; padding:0.6em 0.8em 0.3em 0.8em;background-color: #172b54;color:white;">
   <a href="$prev1">
@@ -137,14 +137,23 @@ if (!empty($next1)) {
        
               </div>
             </div>
-             <div class="w50 flex5" style="align-items: center;">
-              <img src="im/2024/Portada-IS-Finsa-2024.png" style="width:85%; margin:auto; position:relative;
-              box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.35);" data-aos="fade-down">
-                              <a href='pdf/IAS_Finsa_2023_programado.pdf'>
-                    <button style="background-color:#fff; border:1px solid #ccc; padding:10px 20px; border-radius:25px; cursor:pointer;">Descargar el informe completo</button>
-                </a>
-                <p>
-            </div>
+<div class="w50 flex5" style="display: flex;flex-direction: row-reverse;justify-content: space-evenly;align-items: center;flex-wrap: wrap;align-content: flex-start;">
+  <div style="display: flex; justify-content: center; width: 100%; margin-bottom: 20px;">
+    <a href='pdf/IAS_Finsa_2023_programado.pdf' download style="margin-right: 20px; text-decoration: none; color: #007bff; transition: color 0.3s ease;">
+      <span style="font-size: 2.2em; font-weight: 600; letter-spacing: -0.05em; display: inline-block; position: relative; padding-bottom: 5px;" data-aos="fade-down">
+        2023
+        <span style="position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background-color: #007bff; transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease;"></span>
+      </span>
+    </a>
+    <a href='pdf/IAS_Finsa_2023_programado.pdf' download style="text-decoration: none; color: #007bff; transition: color 0.3s ease;">
+      <span style="font-size: 2.2em; font-weight: 600; letter-spacing: -0.05em; display: inline-block; position: relative; padding-bottom: 5px;" data-aos="fade-down">
+        2022
+        <span style="position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background-color: #007bff; transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease;"></span>
+      </span>
+    </a>
+  </div>
+  <img src="im/2024/Portada-IS-Finsa-2024.png" style="width:85%; margin:auto; position:relative; box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.35);" data-aos="fade-down">
+</div>
             
           </div>
         
@@ -177,16 +186,14 @@ box-sizing: content-box;
 <div style="width:100%; font-size:0.8em; color:#fff; background-color:#011f4d; border:1px solid transparent;">
   <div class="flex1" style="width:96%;margin:2em auto; border:1px solid transparent;" >
     <div style="width:32%">
-      <a href="https://generadorestudio.com">
-      Diseño: generadorestudio.com 
-      <img src="im/generador.svg" style="width:1em; vertical-align:middle; margin-left:0.3em; margin-bottom: 0.2em;">
-      </a>
+    <div style="font-weight:bold;">© 2024 FINSA</div>
+
     </div>
-    <div style="width:32%; text-align: center;">
-      © 2024 Finsa<sup>®</sup>
-    </div>
-    <div style="width:32%">
-    </div>
+
+<div style="display:flex; align-items:center; justify-content:center; gap:2em; flex-wrap:wrap;">
+    <img src="im/finsa-logo.svg" alt="FINSA" style="height:2em; vertical-align:middle;">
+    <div>/ CONTACTO: info@finsa.net</div>
+  </div>
   </div>
 </div>
 
