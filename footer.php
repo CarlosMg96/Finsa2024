@@ -139,13 +139,13 @@ if (!empty($next1)) {
             </div>
 <div class="w50 flex5" style="display: flex;flex-direction: row-reverse;justify-content: space-evenly;align-items: center;flex-wrap: wrap;align-content: flex-start;">
   <div style="display: flex; justify-content: center; width: 100%; margin-bottom: 20px;">
-    <a href='pdf/IAS_Finsa_2023_programado.pdf' download style="margin-right: 20px; text-decoration: none; color: #007bff; transition: color 0.3s ease;">
+    <a href='pdf/IAS_Finsa_2023_programado.pdf' download style="margin-right: 20px; text-decoration: none; color: #011f4d; transition: color 0.3s ease;">
       <span style="font-size: 2.2em; font-weight: 600; letter-spacing: -0.05em; display: inline-block; position: relative; padding-bottom: 5px;" data-aos="fade-down">
         2023
         <span style="position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background-color: #007bff; transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease;"></span>
       </span>
     </a>
-    <a href='pdf/IAS_Finsa_2023_programado.pdf' download style="text-decoration: none; color: #007bff; transition: color 0.3s ease;">
+    <a href='pdf/IAS_Finsa_2023_programado.pdf' download style="text-decoration: none; color: #011f4d; transition: color 0.3s ease;">
       <span style="font-size: 2.2em; font-weight: 600; letter-spacing: -0.05em; display: inline-block; position: relative; padding-bottom: 5px;" data-aos="fade-down">
         2022
         <span style="position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background-color: #007bff; transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease;"></span>
