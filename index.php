@@ -80,37 +80,24 @@ echo <<<HTML
     color: rgba(255, 255, 255, 0.7); /* Blanco semi-transparente */
   }
 
-  .evolucion-linea-animada {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient( #0051ff 100%);
-    background-size: 10% 106%;
-    background-position: right center;
-    animation: animacionLineaReverse 5s linear infinite;
-    z-index: 0;
-    pointer-events: none;
-    background-repeat: no-repeat;
-    transform: skewX(-20deg);
-  }
-  .evolucion-linea-animada2 {
+.evolucion-linea-animada {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-size: 10% 106%;
-    background: linear-gradient(rgba(0, 81, 255, 0.29) 100%);
-
+    background: linear-gradient(rgb(156 187 255 / 56%) 100%);
     background-size: 10% 106%;
     background-position: right center;
     animation: animacionLineaReverse 5s linear infinite;
     z-index: 3;
     background-repeat: no-repeat;
     transform: skewX(-20deg);
-  }
+    filter: contrast(0.5);
+    mix-blend-mode: color-dodge;
+}
+
 
   @keyframes animacionLineaReverse {
     0% {
@@ -616,16 +603,15 @@ echo <<<HTML
   <img src="im/00/portada-people.png" class="portadapeople" data-aos="fade-right" />
   <!-- LINEA HORIZONTAL AQUI -->
   <div class="portada-linea"></div>
-  <div class="portadafoto-texto-principal portadafoto-texto-principal-ruta" style="z-index:1; font-size:8vw; font-weight:600; font-family:inherit; color:#1976D2;" data-aos="fade-right">
+  <div class="portadafoto-texto-principal portadafoto-texto-principal-ruta" style="z-index:1; font-size:8vw; font-weight:600; font-family:inherit; color:#4fa7ff;" data-aos="fade-right">
     <span class="evolucion-texto-wrapper">
       <span class="evolucion-texto">EVOLUCIÓN</span>
     </span>
   </div>
-  <div class="evolucion-texto portadafoto-texto-principal portadafoto-texto-principal-sostenibilidad" data-aos="fade-up" style="z-index:1; font-size:8vw; font-weight:600; font-family:inherit; color:#1976D2;">
+  <div class="evolucion-texto portadafoto-texto-principal portadafoto-texto-principal-sostenibilidad" data-aos="fade-up" style="z-index:1; font-size:8vw; font-weight:600; font-family:inherit; color:#4fa7ff;">
     ESTRATÉGICA
   </div>
         <span class="evolucion-linea-animada"></span>
-                <span class="evolucion-linea-animada2"></span>
 
 
 </div>
