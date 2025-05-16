@@ -397,7 +397,7 @@ echo <<<HTML
   /* Estilos para la sección "FINSA EN NÚMEROS" */
   #mainnumbers {
     width: 100vw;
-    background-image: url(im/00/fondo-numbers2.jpg);
+    background-image: url(im/2024/Cifras.png);
     background-size: cover;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -747,12 +747,12 @@ echo <<<HTML
     <li class="contenido-item">
       <div class="contenido-item-izquierda" data-aos="fade-right">
         <span class="numero-con-estilo"
-          style="color:#d29819; width: 60px;#00AEEF; width: 60px; font-size:4em;">03</span>
+          style="color:#1979d2; width: 60px; width: 60px; font-size:4em;">03</span>
         <div>
           <img src="im/whitediag.svg" alt="" style=" max-height: 40px;">
         </div>
         <div>
-          <p style="margin: 0; font-size: 0.9em; color: #d29819;">EVOLUCIÓN QUE NOS PERMITE HACER MÁS</p>
+          <p style="margin: 0; font-size: 0.9em; color:#1979d2;">EVOLUCIÓN QUE NOS PERMITE HACER MÁS</p>
           <p style="margin: 5px 0 0; font-weight: bold;">Talento, cultura corporativa y comunidad</p>
         </div>
       </div>
@@ -851,7 +851,7 @@ echo <<<HTML
 </style>
 
 <div id="mainnumbers"
-  style="width:100vw; background-image: url(im/00/fondo-numbers2.jpg); background-size: cover;border-top:1px solid white;border-bottom:1px solid white;">
+  style="width:100vw; background-image: url(im/2024/Cifras.png); background-size: cover;border-top:1px solid white;border-bottom:1px solid white;">
 
   <div style="width:80%; margin:5vw auto;">
     <img src="im/00/finsa-en-numeros.svg" class="fen" data-aos="fade-down" />
