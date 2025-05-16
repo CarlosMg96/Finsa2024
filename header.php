@@ -246,7 +246,7 @@ if (!empty($thispage)) {
 echo <<<HTML
 
 <div class="flex1" style="position:absolute; right:150px; top:0px;">
-  <a href="informes-anteriores" class="toplinks">INFORMES ANTERIORES</a>
+  <a href="informes-anteriores.php" class="toplinks">INFORMES ANTERIORES</a>
 </div>
 
 

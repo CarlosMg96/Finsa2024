@@ -17,7 +17,7 @@ echo <<<HTML
 
   .portadapeople {
     position: absolute;
-    z-index: 999;
+    z-index: 4;
     bottom: 0;
   }
 
@@ -89,33 +89,28 @@ echo <<<HTML
     background-size: 10% 106%;
     background: linear-gradient(rgb(156 187 255 / 56%) 100%);
     background-size: 10% 106%;
-    background-position: right center;
-    animation: animacionLineaReverse 5s linear infinite;
+    background-position: 70%; /* lado izquierdo */
+    animation: animacionLineaReverse 5s linear forwards;
     z-index: 3;
     background-repeat: no-repeat;
-    transform: skewX(-20deg);
+    transform:skewX(353deg);
     filter: contrast(0.5);
     mix-blend-mode: color-dodge;
 }
 
 
-  @keyframes animacionLineaReverse {
+
+@keyframes animacionLineaReverse {
     0% {
-      background-position: right center;
+      background-position: left center; /* Posición inicial: lado izquierdo */
     }
     100% {
-      background-position: left center;
+      background-position: 50%; /* Posición final: lado derecho */
     }
   }
 
-  @keyframes animacionLinea {
-    0% {
-      background-position: left center;
-    }
-    100% {
-      background-position: right center;
-    }
-  }
+
+
 
   .portadafoto-texto-principal-sostenibilidad {
     left: 34vw;
@@ -159,6 +154,7 @@ echo <<<HTML
     .portadacurve {
       display: none;
     }
+    
 
     .portadapeople {
       width: 55vw;

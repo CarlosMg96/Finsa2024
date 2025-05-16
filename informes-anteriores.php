@@ -88,6 +88,35 @@ echo <<<HTML
         transform: scale(1.05);
     }
 
+    .download-icons {
+        display: flex;
+        justify-content: center; /* Centra los iconos horizontalmente */
+        align-items: center; /* Alinea los iconos verticalmente */
+        gap: 20px; /* Espacio entre los iconos */
+        margin-top: 10px; /* Espacio superior */
+    }
+
+    .download-icons a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+    }
+
+    .download-icons a:hover {
+        color: #00AEEF; /* Cambia el color al pasar el mouse */
+    }
+
+    .download-icons img {
+        width: 32px; /* Tamaño de los iconos */
+        height: auto;
+        margin-bottom: 5px; /* Espacio debajo de los iconos */
+    }
+
+
     @media screen and (max-width: 768px) {
         .container {
             height: auto;
@@ -116,12 +145,41 @@ echo <<<HTML
             </div>
 
             <div>
-                <a id="link-2023" class="download-link" href="pdf/IAS_Finsa_2023_programado.pdf">
+                <div id="link-2023" class="download-link">
                     <img src="im/descargas-foto.jpg" class="image-download">
-                </a>
-                <a id="link-2022" class="download-link" href="pdf/IAS_Finsa_2022_programado.pdf">
+                    <div class="download-icons">
+                        <a href="pdf/IAS_Finsa_2023_programado.pdf">
+                            <img src="im/arr-dwn.svg" alt="Descargar">
+                            Descargar Informe
+                        </a>
+                        <a href="pdf/IAS_Finsa_2023_programado.pdf">
+                            <img src="im/arr-dwn.svg" alt="Download">
+                            Download Report
+                        </a>
+                        <a href="#">
+                            <img src="im/link.png
+                            " alt="Micrositio">
+                            Ir a Micrositio
+                        </a>
+                    </div>
+                </div>
+                <div id="link-2022" class="download-link">
                     <img src="im/2024/Portada-IS-Finsa-2024.png" class="image-download">
-                </a>
+                    <div class="download-icons">
+                        <a href="pdf/IAS_Finsa_2023_programado.pdf">
+                            <img src="im/arr-dwn.svg" alt="Descargar">
+                            Descargar Informe
+                        </a>
+                        <a href="pdf/IAS_Finsa_2023_programado.pdf">
+                            <img src="im/arr-dwn.svg" alt="Download">
+                            Download Report
+                        </a>
+                        <a href="#">
+                            <img src="im/link.png" alt="Micrositio">
+                            Ir a Micrositio
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -154,4 +212,3 @@ $prev1 = "impacto-social";
 $next1 = "./";
 
 require_once "footer.php";
-?>
