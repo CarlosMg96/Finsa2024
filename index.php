@@ -57,7 +57,6 @@ echo <<<HTML
     left: 41.8vw;
     top: 4.3vw;
     font-size: 7vw;
-    color: #1976D2; 
   }
 
   /* Estilos para la animación del texto */
@@ -69,8 +68,16 @@ echo <<<HTML
 
   .evolucion-texto {
     position: relative;
-    z-index: 1;
-    color: #1976D2; 
+    z-index: 2; /*  Z-index del texto inferior */
+    color: #1976D2; /* Todo el texto en azul */
+  }
+
+    .evolucion-texto-blanco { /* Estilo para el texto superior */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3; /* Z-index del texto superior */
+    color: rgba(255, 255, 255, 0.7); /* Blanco semi-transparente */
   }
 
   .evolucion-linea-animada {
@@ -82,35 +89,19 @@ echo <<<HTML
     background: linear-gradient( #0051ff 100%);
     background-size: 10% 106%;
     background-position: right center;
-    animation: animacionLineaReverse 3s linear forwards;
-    z-index: 0;
+    animation: animacionLineaReverse 5s linear infinite;
+    z-index: 1;
     pointer-events: none;
     background-repeat: no-repeat;
     transform: skewX(-20deg);
   }
-  .evolucion-linea-animada2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient( #0051ff 100%);
-    background-size: 10% 106%;
-    background-position: right center;
-    mix-blend-mode: difference;
-    animation: animacionLineaReverse 3s linear forwards;
-    z-index: 2;
-    pointer-events: none;
-    background-repeat: no-repeat;
-    transform: skewX(-20deg);
-    opacity: 0.5;
-  }
+
   @keyframes animacionLineaReverse {
     0% {
       background-position: right center;
     }
     100% {
-            background-position: 65% center; 
+      background-position: left center;
     }
   }
 
@@ -130,6 +121,13 @@ echo <<<HTML
    color:#1976D2;
   }
 
+   .portadafoto-texto-principal-sostenibilidad-blanco {
+    left: 34vw;
+    top: 12.5vw;
+    font-size: 8vw;
+   color: rgba(255, 255, 255, 0.7);
+   position:absolute;
+  }
   /* NUEVOS ESTILOS PARA LA LINEA */
   .portada-linea {
     width:rgb(255, 255, 255)
@@ -465,7 +463,7 @@ echo <<<HTML
       font-size: 3em
     }
 
-    #mainnumbers .fen {
+    .fen {
       width: 34vw
     }
   }
@@ -603,13 +601,19 @@ echo <<<HTML
   <!-- LINEA HORIZONTAL AQUI -->
   <div class="portada-linea"></div>
   <div class="portadafoto-texto-principal portadafoto-texto-principal-ruta" data-aos="fade-right">
-    EVOLUCIÓN
+    <span class="evolucion-texto-wrapper">
+      <span class="evolucion-texto">EVOLUCIÓN</span>
+       <span class="evolucion-texto-blanco">EVOLUCIÓN</span>
+    </span>
   </div>
-  <div class=" evolucion-texto portadafoto-texto-principal portadafoto-texto-principal-sostenibilidad" data-aos="fade-up">
+  <div class="evolucion-texto portadafoto-texto-principal portadafoto-texto-principal-sostenibilidad" data-aos="fade-up" style="z-index:1; font-size:8vw; font-weight:600; font-family:inherit; color:#1976D2;">
     ESTRATÉGICA
   </div>
-        <!-- <span class="evolucion-linea-animada"></span>
-                <span class="evolucion-linea-animada2"></span> -->
+  <div class="evolucion-texto portadafoto-texto-principal-sostenibilidad-blanco" data-aos="fade-up" style="z-index:2; font-size:8vw; font-weight:600; font-family:inherit; color:rgba(255,255,255,0.7); position:absolute;">
+    ESTRATÉGICA
+  </div>
+        <span class="evolucion-linea-animada"></span>
+
 
 
 </div>
@@ -849,7 +853,7 @@ echo <<<HTML
 </style>
 
 <div id="mainnumbers"
-  style="width:100vw; background-image: url(im/2024/Cifras.png); background-size: cover;border-top:1px solid white;border-bottom:1px solid white;">
+  style="width:100vw; background-image: url(im/00/fondo-numbers.jpg); background-size: cover;border-top:1px solid white;border-bottom:1px solid white;">
 
   <div style="width:80%; margin:5vw auto;">
     <img src="im/00/finsa-en-numeros.svg" class="fen" data-aos="fade-down" />
@@ -963,7 +967,7 @@ echo <<<HTML
     -webkit-text-stroke: 1px;
     font-size: 6vw;
     /* Make the numbers larger */
-  }
+      }
 
   .ilinks {
     position: relative;
