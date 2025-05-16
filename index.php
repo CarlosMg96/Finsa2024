@@ -90,8 +90,24 @@ echo <<<HTML
     background-size: 10% 106%;
     background-position: right center;
     animation: animacionLineaReverse 5s linear infinite;
-    z-index: 1;
+    z-index: 0;
     pointer-events: none;
+    background-repeat: no-repeat;
+    transform: skewX(-20deg);
+  }
+  .evolucion-linea-animada2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 10% 106%;
+    background: linear-gradient(rgba(0, 81, 255, 0.29) 100%);
+
+    background-size: 10% 106%;
+    background-position: right center;
+    animation: animacionLineaReverse 5s linear infinite;
+    z-index: 3;
     background-repeat: no-repeat;
     transform: skewX(-20deg);
   }
@@ -600,10 +616,9 @@ echo <<<HTML
   <img src="im/00/portada-people.png" class="portadapeople" data-aos="fade-right" />
   <!-- LINEA HORIZONTAL AQUI -->
   <div class="portada-linea"></div>
-  <div class="portadafoto-texto-principal portadafoto-texto-principal-ruta" data-aos="fade-right">
+  <div class="portadafoto-texto-principal portadafoto-texto-principal-ruta" style="z-index:1; font-size:8vw; font-weight:600; font-family:inherit; color:#1976D2;" data-aos="fade-right">
     <span class="evolucion-texto-wrapper">
       <span class="evolucion-texto">EVOLUCIÓN</span>
-       <span class="evolucion-texto-blanco">EVOLUCIÓN</span>
     </span>
   </div>
   <div class="evolucion-texto portadafoto-texto-principal portadafoto-texto-principal-sostenibilidad" data-aos="fade-up" style="z-index:1; font-size:8vw; font-weight:600; font-family:inherit; color:#1976D2;">
@@ -1013,7 +1028,7 @@ echo <<<HTML
         </div>
 
         <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
-          <span style="font-size: 0.8em; color: #1976D2;">Inicio del proyecto de<br>transformación digital:<br>Innovación estratégica<br>Sostenible (IES)</span>
+          <span style="font-size: 0.8em; color: #1976D2;">Iniciamos el proyecto de<br>transformación digital:<br>Innovación estratégica<br>Sostenible (IES)</span>
           <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
         </div>
       </div>
