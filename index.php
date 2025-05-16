@@ -609,11 +609,8 @@ echo <<<HTML
   <div class="evolucion-texto portadafoto-texto-principal portadafoto-texto-principal-sostenibilidad" data-aos="fade-up" style="z-index:1; font-size:8vw; font-weight:600; font-family:inherit; color:#1976D2;">
     ESTRATÉGICA
   </div>
-  <div class="evolucion-texto portadafoto-texto-principal-sostenibilidad-blanco" data-aos="fade-up" style="z-index:2; font-size:8vw; font-weight:600; font-family:inherit; color:rgba(255,255,255,0.7); position:absolute;">
-    ESTRATÉGICA
-  </div>
         <span class="evolucion-linea-animada"></span>
-
+                <span class="evolucion-linea-animada2"></span>
 
 
 </div>
