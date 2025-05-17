@@ -55,6 +55,7 @@ echo <<<HTML
         color: #7F97B2;
         cursor: pointer;
         transition: color 0.3s;
+        font-size: 32px;
     }
 
     .year-selector h4.active {
@@ -88,7 +89,7 @@ echo <<<HTML
 }
 
     .image-download {
-        width: 650px;
+        width: 500px;
         height: auto;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -122,11 +123,12 @@ echo <<<HTML
     }
 
     .download-icons img {
-        width: 32px; /* Tamaño de los iconos */
+        width: 28px;
         height: auto;
-        margin-bottom: 5px; /* Espacio debajo de los iconos */
+        margin-bottom: 5px;
+        gap: 10px;
+        transition: filter 0.3s;
     }
-
 
     @media screen and (max-width: 768px) {
         .container {
@@ -137,9 +139,14 @@ echo <<<HTML
             width: 100%;
         }
         .image-download {
-            width: 100%;
+            width: 60%;
             max-width: 300px;
         }
+    }
+
+    .icon-download-link {
+        width: 38px !important;
+        height: auto !important;
     }
 
 </style>
@@ -160,16 +167,16 @@ echo <<<HTML
                     <img src="im/descargas-foto.jpg" class="image-download">
                     <div class="download-icons">
                         <a href="pdf/IAS_Finsa_2023_programado.pdf">
-                            <img src="im/arr-dwn.svg" alt="Descargar">
-                            Descargar Informe
+                            <img src="im/arr-dwn.svg" class="icon-download" alt="Download" style="filter: grayscale(100%) brightness(0.7);">
+                            Descargar <br> Informe
                         </a>
                         <a href="pdf/IAS_Finsa_2023_programado.pdf">
-                            <img src="im/arr-dwn.svg" alt="Download">
-                            Download Report
+                            <img src="im/arr-dwn.svg" class="icon-download" alt="Download" style="filter: grayscale(100%) brightness(0.7);">
+                            Download <br> Report
                         </a>
                         <a href="#">
-                            <img src="im/link.png" alt="Micrositio">
-                            Ir a Micrositio
+                            <img src="im/link.png" style="filter: grayscale(100%) brightness(0.7);" class="icon-download-link" alt="Micrositio">
+                            Ir a <br> Micrositio
                         </a>
                     </div>
                 </div>
@@ -177,16 +184,16 @@ echo <<<HTML
                     <img src="im/2024/Portada-IS-Finsa-2024.png" class="image-download">
                     <div class="download-icons">
                         <a href="pdf/IAS_Finsa_2023_programado.pdf">
-                            <img src="im/arr-dwn.svg" alt="Descargar">
-                            Descargar Informe
+                            <img src="im/arr-dwn.svg" class="icon-download" alt="Download" style="filter: grayscale(100%) brightness(0.7);">
+                            Descargar <br> Informe
                         </a>
                         <a href="pdf/IAS_Finsa_2023_programado.pdf">
-                            <img src="im/arr-dwn.svg" alt="Download">
-                            Download Report
+                            <img src="im/arr-dwn.svg" class="icon-download" alt="Download" style="filter: grayscale(100%) brightness(0.7);">
+                            Download <br> Report
                         </a>
                         <a href="#">
-                            <img src="im/link.png" alt="Micrositio">
-                            Ir a Micrositio
+                            <img src="im/link.png" style="filter: grayscale(100%) brightness(0.7);" class="icon-download-link" alt="Micrositio">
+                            Ir a <br> Micrositio
                         </a>
                     </div>
                 </div>

@@ -8,7 +8,6 @@ require_once 'header.php';
 
 echo <<<HTML
 <style type="text/css">
-  /* Contenedor principal */
   .container {
     display: flex;
     flex-direction: column;
@@ -17,7 +16,6 @@ echo <<<HTML
     width: 100vw;
   }
 
-  /* Primera sección con texto e imagen */
   .first-content {
     display: flex;
     justify-content: center;
@@ -27,11 +25,11 @@ echo <<<HTML
     width: 100vw;
     border-top: 1px solid #E9F2F9;
     border-bottom: 1px solid #E9F2F9;
+    z-index: 4;
   }
 
-  /* Texto de la carta */
   .carta-presidente-texto {
-    width: 100%;
+    width: 50%;
   }
 
   .carta-presidente-texto-contenido {
@@ -267,7 +265,7 @@ echo <<<HTML
       background: url('im/2024/carta-director.png') no-repeat;
       background-size: cover;
       background-position: 80px 0;
-      clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0 100%);
       min-height: 480px;
 }
 
@@ -322,7 +320,7 @@ echo <<<HTML
   <div style="display: flex; width: 100vw; min-height: 780px; font-family: 'Helvetica Neue', sans-serif;">
     
     <!-- Columna de texto -->
-    <div style="width: 650px; display: flex; align-items: center;">
+    <div style="width: 850px; display: flex; align-items: center;">
       <div>
         <div style="width: 80%; margin: auto;" class="carta-presidente-texto-contenido" data-aos="fade-right">
           <h3 style="color: #1A2B49; font-size: 1.4em; margin-bottom: 5px; font-weight: 500;">Carta del presidente y</h3>

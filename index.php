@@ -5,7 +5,6 @@ require_once "header.php";
 
 echo <<<HTML
 <style type="text/css">
-  /* Estilos Base (PC y Mobile) */
   .portadafoto {
     width: 100%;
     position: relative;
@@ -71,13 +70,13 @@ echo <<<HTML
   .evolucion-texto-wrapper {
     position: relative;
     display: inline-block;
-    overflow: hidden; /* Importante para que la linea no se salga del contenedor */
+    overflow: hidden; 
   }
 
   .evolucion-texto {
     position: relative;
     z-index: 2; /*  Z-index del texto inferior */
-    color: #1976D2; /* Todo el texto en azul */
+    color: #34B7F1; /* Todo el texto en azul */
   }
 
     .evolucion-texto-blanco { /* Estilo para el texto superior */
@@ -97,8 +96,9 @@ echo <<<HTML
     background-size: 10% 106%;
     background: linear-gradient(rgb(156 187 255 / 56%) 100%);
     background-size: 10% 106%;
-    background-position: 70%; /* lado izquierdo */
-    animation: animacionLineaReverse 2.5s linear forwards;
+    background-position: 70%;
+    animation-delay: 10s;
+    animation: animacionLineaReverse 1.5s linear forwards;
     z-index: 3;
     background-repeat: no-repeat;
     transform:skewX(353deg);
@@ -110,10 +110,10 @@ echo <<<HTML
 
 @keyframes animacionLineaReverse {
     0% {
-      background-position: left center; /* Posición inicial: lado izquierdo */
+      background-position: right center; /* Posición inicial: lado izquierdo */
     }
     100% {
-      background-position: 50%; /* Posición final: lado derecho */
+      background-position: 65%; /* Posición final: lado derecho */
     }
   }
 
@@ -124,7 +124,7 @@ echo <<<HTML
     left: 34vw;
     top: 12.5vw;
     font-size: 8vw;
-   color:#1976D2;
+   color:#34B7F1;
   }
 
    .portadafoto-texto-principal-sostenibilidad-blanco {
@@ -182,7 +182,7 @@ echo <<<HTML
       text-align: center;
       width: 100%;
     font-size: 8vw;
-    color: #1976D2 !important;
+    color: #34B7F1 !important;
     }
 
     .portadafoto-texto-principal-siguiendo {
@@ -245,7 +245,7 @@ echo <<<HTML
   }
 
   .evolucion-estrategica-texto-contenido h2 {
-    color: #1976D2;
+    color: #34B7F1;
     font-size: 2.7em;
   }
 
@@ -481,27 +481,24 @@ echo <<<HTML
       flex-direction: column;
       align-items: center;
       min-height: auto;
-      /* Para permitir que se ajuste al contenido */
     }
 
     .evolucion-estrategica-imagen {
       width: 100%;
       max-width: 500px;
       min-height: 200px;
-      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+      clip-path: polygon(0 0, 180% 0, 100% 100%, 0% 100%);
+      background: url('im/2024/DJI_0457-HDR-Pano.png') center center/cover no-repeat;
     }
 
     .evolucion-estrategica-texto {
       width: 100%;
       max-width: 500px;
-      /* Limita el ancho máximo del texto */
     }
 
     .evolucion-estrategica-texto-contenido {
       width: 90%;
-      /* Ajusta el ancho del contenido para mayor comodidad */
       margin: 20px auto;
-      /* Centra y añade espacio vertical */
     }
   }
 
@@ -604,13 +601,11 @@ echo <<<HTML
 </div>
 
 <div class="portadafoto">
-  <img src="im/00/portada-people.png" class="portadapeople" data-aos="fade-right" />
+  <!-- <img src="im/00/portada-people.png" class="portadapeople" data-aos="fade-right" /> -->
   <!-- LINEA HORIZONTAL AQUI -->
   <div class="portada-linea"></div>
   <div class="portadafoto-texto-principal portadafoto-texto-principal-ruta" style="z-index:1; font-size:8vw; font-weight:600; font-family:inherit; color:#4fa7ff;" data-aos="fade-right">
-    <span class="evolucion-texto-wrapper">
-      <span class="evolucion-texto">EVOLUCIÓN</span>
-    </span>
+   EVOLUCIÓN
   </div>
   <div class="evolucion-texto portadafoto-texto-principal portadafoto-texto-principal-sostenibilidad" data-aos="fade-up" style="z-index:1; font-size:8vw; font-weight:600; font-family:inherit; color:#4fa7ff;">
     ESTRATÉGICA
@@ -990,36 +985,36 @@ echo <<<HTML
     <div class="highlights-imagen"></div>
     <div class="highlights-texto" data-aos="fade-right">
       <h2 style="font-size: 3em; font-weight: bold; margin-bottom: 0.5em; color: #000;" data-aos="fade-right">HIGHLIGHTS</h2>
-      <p style="font-size: 1.2em; margin-bottom: 2em; font-family:fantasy" data-aos="fade-right">2024</p>
+      <p style="font-size: 1.2em; margin-bottom: 2em;" data-aos="fade-right">2024</p>
 
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
 <div style="width: 45%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
-          <span class="numero-con-estilo" style="font-size:7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">10</span>
-          <span style="font-size: 1em; display: block; color: #1976D2;  font-family:fantasy">Estados de<br>la República</span>
-          <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
+          <span class="numero-con-estilo" style="font-size:7em; font-weight: lighter; color: #34B7F1; display: block; line-height: 0.8;">10</span>
+          <span style="font-weight: 600; font-size: 1em; display: block; color: #34B7F1; ">Estados de<br>la República</span>
+          <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #34B7F1; transform: rotate(3deg);"></div>
         </div>
 
         <div style="width: 45%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
-          <span class="numero-con-estilo" style="font-size: 7em; font-weight: lighter; color: #1976D2; display: block; line-height: 0.8;">4</span>
-          <span style="font-size: 1em; display: block; color: #1976D2;  font-family:fantasy">Parques Proveedores<br>de la industria<br>automotriz</span>
-          <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
+          <span class="numero-con-estilo" style="font-size: 7em; font-weight: lighter; color: #34B7F1; display: block; line-height: 0.8;">4</span>
+          <span style="font-weight: 600; font-size: 1em; display: block; color: #34B7F1;">Parques Proveedores<br>de la industria<br>automotriz</span>
+          <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #34B7F1; transform: rotate(3deg);"></div>
         </div>
       </div>
 
       <div style="display: flex;flex-wrap: wrap;justify-content: space-between;position: relative;align-items: flex-end;">
         <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
-          <span style="font-size: 0.8em; color: #1976D2;  font-family:fantasy">Cierre de la segunda<br>etapa del fondo de<br>inversión FINSA V</span>
-          <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
+          <span style="font-weight: bold; font-size: 0.8em; color: #34B7F1;">Cierre de la segunda<br>etapa del fondo de<br>inversión FINSA V</span>
+          <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #34B7F1; transform: rotate(3deg);"></div>
         </div>
 
         <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
-          <span style="font-size: 0.8em; color: #1976D2;  font-family:fantasy">Formamos parte por<br>segundo año de las<br>500 empresas más importantes<br>de México, de la revista expansión</span>
-          <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
+          <span style="font-weight: bold; font-size: 0.8em; color: #34B7F1;">Formamos parte por<br>segundo año de las<br>500 empresas más importantes<br>de México, de la revista expansión</span>
+          <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #34B7F1; transform: rotate(3deg);"></div>
         </div>
 
         <div style="width: 30%; margin-bottom: 2em; text-align: left; position: relative;" data-aos="fade-right">
-          <span style="font-size: 0.8em; color: #1976D2;  font-family:fantasy">Iniciamos el proyecto de<br>transformación digital:<br>Innovación estratégica<br>Sostenible (IES)</span>
-          <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #1976D2; transform: rotate(3deg);"></div>
+          <span style="font-weight: bold; font-size: 0.8em; color: #34B7F1; ">Iniciamos el proyecto de<br>transformación digital:<br>Innovación estratégica<br>Sostenible (IES)</span>
+          <div style="position: absolute; top: 0; right: 0; height: 100%; border-right: 1px solid #34B7F1; transform: rotate(3deg);"></div>
         </div>
       </div>
     </div>
